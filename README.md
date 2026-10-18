@@ -11,7 +11,7 @@
 ## 🌐 Live Demo & Deployment
 
 - **Live Application:** `https://agent-dating.onrender.com` *(placeholder)*
-- **Demo Mode:** Load 26 pre-computed profiles and 50 multi-turn dates with a single click—no API keys required.
+- **Demo Mode:** Load 25 real pre-computed profiles, dates, and rankings with a single click—no API keys required.
 
 ---
 
@@ -38,7 +38,7 @@ flowchart TD
 
 - **Scraping Layer:** Apify actors scrape public Instagram (`apify/instagram-profile-scraper`) and LinkedIn profiles (`harvestapi/linkedin-profile-scraper`) without logged-in sessions or cookies. Scraped data is normalized and cached on disk using SHA-1 keys.
 - **Analysis Engine:** Open-weight LLMs (`openai/gpt-oss-120b` on Groq, failing over to Google AI Studio Gemini Flash) extract structured profiles with strict evidence grounding. Every claim must be supported by available source data.
-- **Pair Shortlisting:** Semantic embedding cosine similarity (`sentence-transformers/all-MiniLM-L6-v2`, with a scikit-learn TF-IDF fallback) shortlists the top candidate pairs while applying safety thresholds and pair-count limits.
+- **Pair Shortlisting:** TF-IDF cosine similarity via scikit-learn shortlists candidate pairs while applying safety thresholds and pair-count limits.
 - **Date Simulation:** Two distinct, isolated LLM streams (`openai/gpt-oss-20b`) converse across 3 rounds and 6 turns. Neither agent sees the other agent's profile—only the conversational turns. After the conversation, each agent privately scores the interaction.
 - **Ranking Formula:** Calibrated match scores combine mutual mean, an asymmetry penalty, and a mutual-interest bonus:
 
@@ -104,7 +104,7 @@ python scripts/run_batch.py --input scripts/seed_people.example.csv --output dat
 ## 🔒 Privacy, Ethics & Hygiene
 
 - **Public Data Only:** Only publicly viewable profile information is accessed. No authenticated sessions or private cookies are utilized.
-- **Consent:** All individuals included in the demo dataset have granted consent for demonstration purposes.
+- **Disclaimer & Privacy:** All profiles and dates are AI-generated simulations from public data, not real statements or real compatibility.
 - **Third-Party Terms:** Scraping public social profiles via third-party actors may conflict with individual platform terms of service.
 - **No Raw Data Committed:** Raw scrape JSON outputs are gitignored (`data/raw/`, `data/cache/`, `data/runs/`). Only sanitized, processed profiles, date transcripts, and rankings are stored.
 - **Safety & Sensitive Attributes:** The analysis system prompt strictly prohibits inventing or speculating on sexual orientation, health status, political party, religion, or other sensitive personal attributes.

@@ -91,6 +91,7 @@ class DataQuality(BaseModel):
 
 
 class Profile(BaseModel):
+    model_config = {"protected_namespaces": ()}
     id: str
     summary: str = ""
     needs: list[EvidencedItem] = Field(default_factory=list)
@@ -122,6 +123,7 @@ class Verdict(BaseModel):
 
 
 class DateResult(BaseModel):
+    model_config = {"protected_namespaces": ()}
     a: str  # person id
     b: str  # person id
     transcript: list[TranscriptTurn] = Field(default_factory=list)

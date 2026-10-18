@@ -1,43 +1,18 @@
 """
-Shortlisting — embeddings-based pair selection.
-
-Uses sentence-transformers (all-MiniLM-L6-v2) locally.
-Falls back to TF-IDF cosine similarity with scikit-learn if sentence-transformers is unavailable.
+Shortlisting — TF-IDF cosine similarity pair selection using scikit-learn.
 """
 
 import logging
 from typing import Optional
 
 import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity as sklearn_cosine
 
 from app.config import TOP_K_SHORTLIST, MAX_PAIRS
 from app.models import Profile
 
 logger = logging.getLogger(__name__)
-
-# Lazy-loaded model
-_model = None
-_use_tfidf = False
-
-
-def _get_embedder():
-    """Load sentence-transformers model, fall back to TF-IDF."""
-    global _model, _use_tfidf
-    if _model is not None:
-        return _model
-
-    try:
-        from sentence_transformers import SentenceTransformer
-        _model = SentenceTransformer('all-MiniLM-L6-v2')
-        logger.info("Loaded sentence-transformers model")
-    except Exception as e:
-        logger.warning(f"sentence-transformers unavailable ({e}), falling back to TF-IDF")
-        _use_tfidf = True
-        from sklearn.feature_extraction.text import TfidfVectorizer
-        _model = TfidfVectorizer(max_features=5000)
-
-    return _model
 
 
 def _profile_to_text(profile: Profile) -> str:
@@ -73,16 +48,9 @@ def compute_shortlist(
     ids = sorted(profiles.keys())
     texts = [_profile_to_text(profiles[pid]) for pid in ids]
 
-    embedder = _get_embedder()
-
-    if _use_tfidf:
-        # TF-IDF path
-        matrix = embedder.fit_transform(texts)
-        sim_matrix = sklearn_cosine(matrix)
-    else:
-        # Sentence-transformers path
-        embeddings = embedder.encode(texts, show_progress_bar=False)
-        sim_matrix = sklearn_cosine(embeddings)
+    vectorizer = TfidfVectorizer(max_features=5000)
+    matrix = vectorizer.fit_transform(texts)
+    sim_matrix = sklearn_cosine(matrix)
 
     # Zero out self-similarity
     np.fill_diagonal(sim_matrix, 0)

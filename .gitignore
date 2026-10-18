@@ -9,6 +9,9 @@ __pycache__/
 dist/
 build/
 *.egg
+.venv/
+*venv*/
+
 
 # Data (raw/cached/user runs are NOT committed)
 data/cache/

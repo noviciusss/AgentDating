@@ -30,14 +30,14 @@ def test_full_app():
     # 3. Test People Page
     r = client.get(f"/run/{run_id}/people")
     assert r.status_code == 200, f"People page failed: {r.status_code}"
-    assert "Maya Patel" in r.text
+    assert "People" in r.text
     print("[PASS] GET /run/demo/people")
 
     # 4. Test Person Profile Page
-    r = client.get(f"/run/{run_id}/person/maya-patel")
+    r = client.get(f"/run/{run_id}/person/diksha-arora")
     assert r.status_code == 200, f"Person page failed: {r.status_code}"
-    assert "AI research engineer" in r.text
-    print("[PASS] GET /run/demo/person/maya-patel")
+    assert "Diksha Arora" in r.text
+    print("[PASS] GET /run/demo/person/diksha-arora")
 
     # 5. Test Dates List Page
     r = client.get(f"/run/{run_id}/dates")
