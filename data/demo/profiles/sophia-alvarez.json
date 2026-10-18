@@ -1,0 +1,82 @@
+{
+  "id": "sophia-alvarez",
+  "summary": "Documentary filmmaker and photojournalist investigating climate migration and indigenous water rights. Empathetic, brave, poetic, and globally minded.",
+  "needs": [
+    {
+      "item": "Deep emotional presence and comfort with unpredictable schedules",
+      "evidence": "IG post: 'Just wrapped 3 weeks in the Atacama desert. Re-entry requires patience.'"
+    },
+    {
+      "item": "Shared love for visual storytelling and humanitarian causes",
+      "evidence": "LinkedIn director statement for Sundance-selected short documentary"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Black-and-white darkroom printing",
+      "evidence": "IG post: 'Silver gelatin print of Andean weavers drying under red safelight'"
+    },
+    {
+      "item": "Wilderness backpacking and desert trekking",
+      "evidence": "IG story: 'Bivvy camping under the southern cross, 4000m above sea level'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Hydropolitics and indigenous oral histories",
+      "evidence": "LinkedIn panelist: 'Documentary ethics when telling stories of vulnerable communities'"
+    },
+    {
+      "item": "Latin American magical realism literature",
+      "evidence": "IG book post: 'Re-reading Gabriel Garcia Marquez on the long bus to Salta'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Courage, empathy, and bearing witness to truth",
+      "evidence": "LinkedIn award: Overseas Press Club honorable mention for environmental reporting."
+    },
+    {
+      "item": "Living lightly on the land and honoring community",
+      "evidence": "IG bio: 'Eyes open, pack light, leave gratitude behind'"
+    }
+  ],
+  "communication_style": {
+    "description": "Intimate, reflective, asks questions that dig below surface facades, speaks with vivid visual imagery.",
+    "evidence": "Narrative voiceover sample posted on Vimeo link in bio."
+  },
+  "personality_signals": [
+    {
+      "item": "Fearless in the field yet vulnerable in quiet moments",
+      "evidence": "IG journal entry: 'The hardest part isn't the altitude sickness, it's the silence when you return.'"
+    },
+    {
+      "item": "Deep reverence for human resilience",
+      "evidence": "Photo essays celebrating elders, water keepers, and youth activists."
+    }
+  ],
+  "looking_for": {
+    "description": "A kind, grounded, open-hearted soul who has their own inner anchor, loves travel off the beaten path, and isn't intimidated by raw emotions.",
+    "confidence": "high",
+    "evidence": "Expressed in personal essays and documentary reflections on intimacy and wandering."
+  },
+  "dealbreakers": [
+    {
+      "item": "Arrogance and cultural insensitivity",
+      "evidence": "IG caption: 'Humility is the first requirement of any storyteller.'"
+    },
+    {
+      "item": "Materialism and demanding a conventional 9-5 domestic routine",
+      "evidence": "LinkedIn essay on freelance filmmaking: 'I cannot promise a predictable Tuesday.'"
+    }
+  ],
+  "lifestyle": {
+    "description": "Several months on location filming in remote regions, followed by intense editing periods in city studio; minimalist possessions.",
+    "evidence": "IG feed: dusty Land Cruisers, cinema camera rigs, darkroom trays, vibrant portraits of locals."
+  },
+  "agent_persona": "Warm, observant, and disarmingly sincere. Gently cuts through small talk to ask about what truly moves you, sharing vivid stories from remote landscapes.",
+  "data_quality": {
+    "linkedin": "rich",
+    "instagram": "rich"
+  }
+}

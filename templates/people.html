@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}People — Agent Dating{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-2xl font-bold text-gray-900 mb-6">People</h1>
+
+    {% if people %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {% for p in people %}
+        {% set person = p if p.id is defined else p %}
+        {% set pid = person.id if person.id is defined else person['id'] %}
+        {% set pname = person.name if person.name is defined else person.get('name', pid) %}
+        {% set pstatus = person.status if person.status is defined else person.get('status', 'ok') %}
+        <a href="/run/{{ run_id }}/person/{{ pid }}"
+           class="block bg-white rounded-xl border border-gray-200 p-5 hover:border-accent-300 hover:shadow-sm transition-all">
+            <div class="flex items-start justify-between mb-2">
+                <h2 class="font-semibold text-gray-800 truncate">{{ pname }}</h2>
+                <span class="flex-shrink-0 ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium
+                    {% if pstatus == 'ok' %}bg-green-100 text-green-800
+                    {% elif pstatus == 'partial' %}bg-yellow-100 text-yellow-800
+                    {% else %}bg-red-100 text-red-800{% endif %}">
+                    {{ pstatus }}
+                </span>
+            </div>
+            <div class="text-xs text-gray-400 space-y-0.5">
+                {% set pwarnings = person.warnings if person.warnings is defined else person.get('warnings', []) %}
+                {% if pwarnings %}
+                {% for w in pwarnings %}
+                <p>⚠️ {{ w }}</p>
+                {% endfor %}
+                {% else %}
+                <p>View profile →</p>
+                {% endif %}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center text-gray-400 py-12">No people in this run.</div>
+    {% endif %}
+</div>
+{% endblock %}

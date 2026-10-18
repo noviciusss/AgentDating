@@ -1,0 +1,44 @@
+{
+  "a": "diego-morales",
+  "b": "soren-kruger",
+  "transcript": [
+    {
+      "speaker": "a",
+      "text": "Hi Soren! Glad we could carve out time for this. I just wrapped up a long day, but I was genuinely intrigued by your world\u2014especially how you balance hand-welting cordovan leather boots with everything else."
+    },
+    {
+      "speaker": "b",
+      "text": "Hey Diego! Good to meet you. Haha, honestly, hand-welting cordovan leather boots is what keeps me grounded when work gets hectic. I saw you're deeply into heritage grain farming and permaculture\u2014do you find that gives you an escape, or does it take the same intense focus as your day job?"
+    },
+    {
+      "speaker": "a",
+      "text": "To be honest, it demands pretty rigorous discipline. If you're unfocused up on a ridge or in the studio, things fall apart fast. I can sometimes be a bit uncompromising about that\u2014how do you handle it when someone you care about has a completely different pace than you?"
+    },
+    {
+      "speaker": "b",
+      "text": "That's fair. I've learned that forcing identical rhythms usually breeds resentment; I need my partner to respect quiet spaces rather than pulling me into high gear non-stop. If someone can't sit with stillness, we might clash pretty fast."
+    },
+    {
+      "speaker": "a",
+      "text": "I hear you, and I appreciate your candor. I'm definitely high-tempo by nature, so having that contrast could either be balancing or a recipe for frustration. Still, I really enjoyed seeing the world through your lens tonight."
+    },
+    {
+      "speaker": "b",
+      "text": "Likewise, Diego. It's refreshing when people are upfront about who they are instead of playing a role. Wishing you the best on your upcoming projects, and take care out there!"
+    }
+  ],
+  "a_verdict": {
+    "score": 67,
+    "chemistry": "Appreciated their thoughtful answers and passion for their craft.",
+    "concerns": "Felt a slight reservation or guardedness on their end during the second half.",
+    "would_second_date": true
+  },
+  "b_verdict": {
+    "score": 64,
+    "chemistry": "Intellectually stimulating conversation, but the lifestyle energy feels a bit too fast-paced for me long term.",
+    "concerns": "I need someone with more stillness and contemplative downtime.",
+    "would_second_date": false
+  },
+  "final_score": 64.6,
+  "date_failed": false
+}

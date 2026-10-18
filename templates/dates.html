@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Dates — Agent Dating{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <h1 class="text-2xl font-bold text-gray-900 mb-6">All Dates</h1>
+
+    <!-- Filter by person -->
+    {% if people %}
+    <div class="mb-6">
+        <label class="block text-sm font-medium text-gray-600 mb-1">Filter by person</label>
+        <select id="person-filter" onchange="filterDates(this.value)"
+                class="rounded-lg border border-gray-300 px-3 py-2 text-sm
+                       focus:border-accent-500 focus:ring-1 focus:ring-accent-500">
+            <option value="">All</option>
+            {% for p in people %}
+            <option value="{{ p.id }}" {% if filter_person == p.id %}selected{% endif %}>{{ p.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    {% endif %}
+
+    {% if dates %}
+    <div class="space-y-3">
+        {% for d in dates %}
+        <a href="/run/{{ run_id }}/date/{{ d.a }}__{{ d.b }}"
+           class="date-card block bg-white rounded-xl border border-gray-200 p-4 hover:border-accent-300 hover:shadow-sm transition-all"
+           data-people="{{ d.a }} {{ d.b }}">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="font-medium text-gray-800">{{ names.get(d.a, d.a) }}</span>
+                    <span class="text-gray-400 mx-2">×</span>
+                    <span class="font-medium text-gray-800">{{ names.get(d.b, d.b) }}</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    {% if d.date_failed %}
+                    <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full">failed</span>
+                    {% endif %}
+                    <span class="text-lg font-bold text-accent-600">{{ "%.1f"|format(d.final_score) }}</span>
+                </div>
+            </div>
+            {% if d.a_verdict.chemistry %}
+            <p class="text-xs text-gray-400 mt-2 line-clamp-1">{{ d.a_verdict.chemistry }}</p>
+            {% endif %}
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center text-gray-400 py-12">No dates yet.</div>
+    {% endif %}
+</div>
+
+<script>
+function filterDates(personId) {
+    const url = new URL(window.location);
+    if (personId) url.searchParams.set('person', personId);
+    else url.searchParams.delete('person');
+    window.location = url;
+}
+</script>
+{% endblock %}

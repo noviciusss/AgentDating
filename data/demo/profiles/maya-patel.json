@@ -1,0 +1,82 @@
+{
+  "id": "maya-patel",
+  "summary": "AI research engineer passionate about open-source robotics and alpine mountaineering. Direct, intellectually playful, and balances long code sprints with multi-day high-altitude treks.",
+  "needs": [
+    {
+      "item": "Intellectual sparring and deep technical curiosity",
+      "evidence": "Substack post cited on LinkedIn: 'Why I prefer collaborators who challenge my fundamental assumptions'"
+    },
+    {
+      "item": "Outdoor partnership for high-energy weekends",
+      "evidence": "IG caption (Aug 2024): 'Need someone who won't complain about a 4am alpine start at Mt. Rainier'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Alpine mountaineering and rock climbing",
+      "evidence": "IG post: 'Summit ridge on Mt. Shuksan, pitch 4 was pure ice'"
+    },
+    {
+      "item": "Handmade pour-over coffee brewing",
+      "evidence": "IG story highlight 'Beans': Dialing in a light roast washed Ethiopian on the V60"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Embodied AI and neuromorphic chips",
+      "evidence": "LinkedIn paper co-author: 'Low-latency control policies for quadrupeds'"
+    },
+    {
+      "item": "Sci-fi literature and speculative futurism",
+      "evidence": "Goodreads badge on IG bio: currently reading Ted Chiang & Kim Stanley Robinson"
+    }
+  ],
+  "values": [
+    {
+      "item": "Relentless curiosity and building things that last",
+      "evidence": "LinkedIn headline: 'Staff Research Engineer \u2014 building autonomous systems that outlive hype cycles'"
+    },
+    {
+      "item": "Discipline without taking oneself too seriously",
+      "evidence": "IG bio: 'Equal parts PyTorch tensors and trail dirt. Humor is mandatory.'"
+    }
+  ],
+  "communication_style": {
+    "description": "Fast-paced, candid, uses dry wit and dry observations. Prefers clarity over polite hedging.",
+    "evidence": "LinkedIn post: 'Most meetings could be a git commit message with thoughtful comments.'"
+  },
+  "personality_signals": [
+    {
+      "item": "Intense focus punctuated by spontaneous outdoor trips",
+      "evidence": "IG post: 'Pushed code at 6pm, drove 4 hours to trail head by midnight'"
+    },
+    {
+      "item": "Pragmatic optimist",
+      "evidence": "Podcast interview referenced in LinkedIn: 'I'm skeptical of grand claims until the prototype runs.'"
+    }
+  ],
+  "looking_for": {
+    "description": "An ambitious partner with their own dedicated passions who enjoys brisk banter, spontaneous weekend adventures, and deep evening conversations.",
+    "confidence": "medium",
+    "evidence": "Inferred from consistent emphasis on autonomy, active weekends, and mutual intellectual respect."
+  },
+  "dealbreakers": [
+    {
+      "item": "Passivity and chronic complaining",
+      "evidence": "IG caption: 'Life is too short for lethargy and bad weather excuses.'"
+    },
+    {
+      "item": "Lack of personal ambition or creative drive",
+      "evidence": "LinkedIn article: 'I thrive around builders who take genuine pride in their craft.'"
+    }
+  ],
+  "lifestyle": {
+    "description": "Early riser, spends 50+ hours weekly in lab/building, weekends in mountains or local espresso spots.",
+    "evidence": "IG posts alternating between clean desk setup with mechanical keyboards and snowy summits."
+  },
+  "agent_persona": "Speaks with brisk warmth and sharp wit. Asks direct questions about what truly excites you, playfully teases generic answers, and probes for genuine grit.",
+  "data_quality": {
+    "linkedin": "rich",
+    "instagram": "rich"
+  }
+}

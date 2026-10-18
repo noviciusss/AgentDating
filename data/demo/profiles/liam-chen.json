@@ -1,0 +1,82 @@
+{
+  "id": "liam-chen",
+  "summary": "Architectural designer and ceramic artist focused on minimalist biophilic spaces. Thoughtful, observant, and values quiet craftsmanship and intentional living.",
+  "needs": [
+    {
+      "item": "Quiet emotional attunement and calm companionship",
+      "evidence": "IG caption: 'My studio days require silence and space to listen to the clay.'"
+    },
+    {
+      "item": "Appreciation for spatial design and tactile art",
+      "evidence": "LinkedIn project case study: 'Timber & Earth: Restoring heritage dwellings in Kyoto'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Wheel-thrown ceramics and stoneware glazing",
+      "evidence": "IG reel series: 'Batch 14 wood-fired tea bowls fresh from the kiln'"
+    },
+    {
+      "item": "Urban cycling on steel frame bikes",
+      "evidence": "IG post: '30km dawn lap through the misty docklands on my 1988 Bianchi'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Japanese joinery and sustainable timber construction",
+      "evidence": "LinkedIn post: 'Why mortise-and-tenon joints hold lessons for modern circular economy'"
+    },
+    {
+      "item": "Analog photography (medium format film)",
+      "evidence": "IG bio: 'Documenting light on Hasselblad 500CM'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Intentionality, craft, and slowing down",
+      "evidence": "Design manifesto on personal site linked via LinkedIn: 'Form follows presence'"
+    },
+    {
+      "item": "Environmental stewardship through material honesty",
+      "evidence": "AIA presentation deck on LinkedIn: 'Embodied carbon in residential design'"
+    }
+  ],
+  "communication_style": {
+    "description": "Gentle, measured, poetic cadence. Listens intently before speaking and asks evocative, sensory questions.",
+    "evidence": "IG long-form caption: 'Notice how the morning shadow stretches along raw cedar before judging the day.'"
+  },
+  "personality_signals": [
+    {
+      "item": "Introverted depth and patient focus",
+      "evidence": "IG story: 'Spent 6 hours wedging clay today. Meditative bliss.'"
+    },
+    {
+      "item": "Refined aesthetic sensibilities",
+      "evidence": "Curated Instagram grid with harmonious earthy palette and clean geometry."
+    }
+  ],
+  "looking_for": {
+    "description": "A grounded, emotionally mature partner who cherishes art, peaceful morning routines, and genuine authenticity.",
+    "confidence": "medium",
+    "evidence": "Inferred from focus on slow living, studio craft, and avoidance of chaotic environments."
+  },
+  "dealbreakers": [
+    {
+      "item": "Frenetic lifestyle and superficial consumerism",
+      "evidence": "IG reflection: 'Surround yourself with fewer things made with greater soul.'"
+    },
+    {
+      "item": "Loud, domineering conversation styles",
+      "evidence": "LinkedIn quote: 'Good design\u2014like good partnership\u2014creates room to breathe.'"
+    }
+  ],
+  "lifestyle": {
+    "description": "Spends mornings drafting in studio, afternoons in ceramics workshop, peaceful evenings with tea and vinyl records.",
+    "evidence": "IG feed: warm wooden interiors, clay pottery, tea ceremonies, film photos of architectural details."
+  },
+  "agent_persona": "Soft-spoken, deeply attentive, and evocative. Shares subtle sensory observations and pushes back gently when conversations feel rushed or performative.",
+  "data_quality": {
+    "linkedin": "rich",
+    "instagram": "rich"
+  }
+}

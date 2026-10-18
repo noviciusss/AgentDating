@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block title %}{{ person.name }} — Agent Dating{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <!-- Header -->
+    <div class="mb-6">
+        <a href="/run/{{ run_id }}/people" class="text-sm text-accent-600 hover:underline">← All People</a>
+    </div>
+
+    <div class="bg-white rounded-xl border border-gray-200 p-6 mb-6">
+        <h1 class="text-2xl font-bold text-gray-900 mb-1">{{ person.name }}</h1>
+        <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+            {% if person.linkedin_url %}
+            <a href="{{ person.linkedin_url }}" target="_blank" class="hover:text-accent-600 transition-colors">🔗 LinkedIn</a>
+            {% endif %}
+            {% if person.instagram_url %}
+            <a href="{{ person.instagram_url }}" target="_blank" class="hover:text-accent-600 transition-colors">📷 Instagram</a>
+            {% endif %}
+        </div>
+
+        <!-- Data quality badges -->
+        {% if profile %}
+        <div class="flex gap-2 mb-4">
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+                {% if profile.data_quality.linkedin == 'rich' %}bg-green-100 text-green-800
+                {% elif profile.data_quality.linkedin == 'thin' %}bg-yellow-100 text-yellow-800
+                {% else %}bg-red-100 text-red-800{% endif %}">
+                LinkedIn: {{ profile.data_quality.linkedin }}
+            </span>
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+                {% if profile.data_quality.instagram == 'rich' %}bg-green-100 text-green-800
+                {% elif profile.data_quality.instagram == 'thin' %}bg-yellow-100 text-yellow-800
+                {% else %}bg-red-100 text-red-800{% endif %}">
+                Instagram: {{ profile.data_quality.instagram }}
+            </span>
+        </div>
+        {% endif %}
+
+        <!-- Warnings -->
+        {% if person.warnings %}
+        <div class="space-y-2 mb-4">
+            {% for w in person.warnings %}
+            <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 text-sm px-4 py-2 rounded-lg">
+                ⚠️ {{ w }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if person.status == 'failed' %}
+        <div class="bg-red-50 border border-red-200 text-red-800 text-sm px-4 py-3 rounded-lg">
+            ❌ This person could not be analyzed — both data sources were unavailable. They are excluded from dating.
+        </div>
+        {% endif %}
+    </div>
+
+    {% if profile %}
+    <!-- Summary -->
+    <div class="bg-white rounded-xl border border-gray-200 p-6 mb-4">
+        <h2 class="text-lg font-semibold text-gray-800 mb-2">Summary</h2>
+        <p class="text-gray-600 leading-relaxed">{{ profile.summary }}</p>
+    </div>
+
+    <!-- Profile sections as evidence cards -->
+    {% set sections = [
+        ('Needs', profile.needs),
+        ('Hobbies', profile.hobbies),
+        ('Interests', profile.interests),
+        ('Values', profile.values),
+        ('Personality Signals', profile.personality_signals),
+        ('Dealbreakers', profile.dealbreakers),
+    ] %}
+
+    {% for label, items in sections %}
+    {% if items %}
+    <div class="bg-white rounded-xl border border-gray-200 p-6 mb-4">
+        <h2 class="text-lg font-semibold text-gray-800 mb-3">{{ label }}</h2>
+        <div class="space-y-3">
+            {% for item in items %}
+            <div>
+                <p class="text-gray-800 text-sm font-medium">{{ item.item }}</p>
+                <p class="text-gray-400 text-xs mt-0.5 italic">{{ item.evidence }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <!-- Communication style -->
+    {% if profile.communication_style.description %}
+    <div class="bg-white rounded-xl border border-gray-200 p-6 mb-4">
+        <h2 class="text-lg font-semibold text-gray-800 mb-2">Communication Style</h2>
+        <p class="text-gray-600 text-sm">{{ profile.communication_style.description }}</p>
+        <p class="text-gray-400 text-xs mt-1 italic">{{ profile.communication_style.evidence }}</p>
+    </div>
+    {% endif %}
+
+    <!-- Looking for -->
+    {% if profile.looking_for.description %}
+    <div class="bg-white rounded-xl border border-gray-200 p-6 mb-4">
+        <h2 class="text-lg font-semibold text-gray-800 mb-2">
+            Looking For
+            <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium
+                {% if profile.looking_for.confidence == 'high' %}bg-green-100 text-green-800
+                {% elif profile.looking_for.confidence == 'medium' %}bg-yellow-100 text-yellow-800
+                {% else %}bg-gray-100 text-gray-600{% endif %}">
+                {{ profile.looking_for.confidence }} confidence
+            </span>
+        </h2>
+        <p class="text-gray-600 text-sm">{{ profile.looking_for.description }}</p>
+        <p class="text-gray-400 text-xs mt-1 italic">{{ profile.looking_for.evidence }}</p>
+    </div>
+    {% endif %}
+
+    <!-- Lifestyle -->
+    {% if profile.lifestyle.description %}
+    <div class="bg-white rounded-xl border border-gray-200 p-6 mb-4">
+        <h2 class="text-lg font-semibold text-gray-800 mb-2">Lifestyle</h2>
+        <p class="text-gray-600 text-sm">{{ profile.lifestyle.description }}</p>
+        <p class="text-gray-400 text-xs mt-1 italic">{{ profile.lifestyle.evidence }}</p>
+    </div>
+    {% endif %}
+
+    <!-- Agent persona -->
+    {% if profile.agent_persona %}
+    <div class="bg-accent-50 border border-accent-200 rounded-xl p-6 mb-4">
+        <h2 class="text-lg font-semibold text-accent-800 mb-2">🤖 Agent Persona</h2>
+        <p class="text-accent-700 text-sm italic">{{ profile.agent_persona }}</p>
+    </div>
+    {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

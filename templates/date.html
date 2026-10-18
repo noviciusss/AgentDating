@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}Date: {{ a_name }} & {{ b_name }} — Agent Dating{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <div class="mb-6">
+        <a href="/run/{{ run_id }}/dates" class="text-sm text-accent-600 hover:underline">← All Dates</a>
+    </div>
+
+    <div class="bg-white rounded-xl border border-gray-200 p-6 mb-6">
+        <h1 class="text-xl font-bold text-gray-900 mb-1">
+            {{ a_name }} <span class="text-gray-400 font-normal">×</span> {{ b_name }}
+        </h1>
+        <div class="flex items-center gap-3 mt-2">
+            <span class="text-2xl font-bold text-accent-600">{{ "%.1f"|format(date.final_score) }}</span>
+            <span class="text-sm text-gray-400">final score</span>
+        </div>
+    </div>
+
+    <!-- Transcript -->
+    <div class="space-y-4 mb-8">
+        {% for turn in date.transcript %}
+        <div class="flex {% if turn.speaker == 'a' %}justify-start{% else %}justify-end{% endif %}">
+            <div class="max-w-[75%] {% if turn.speaker == 'a' %}bg-gray-100 text-gray-800{% else %}bg-accent-600 text-white{% endif %} rounded-2xl px-4 py-3">
+                <p class="text-xs font-medium mb-1 {% if turn.speaker == 'a' %}text-gray-500{% else %}text-accent-200{% endif %}">
+                    {% if turn.speaker == 'a' %}{{ a_name }}{% else %}{{ b_name }}{% endif %}
+                </p>
+                <p class="text-sm leading-relaxed">{{ turn.text }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if date.date_failed %}
+    <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 text-sm px-4 py-3 rounded-lg mb-6">
+        ⚠️ This date encountered errors. Scores are based on embedding similarity.
+    </div>
+    {% endif %}
+
+    <!-- Verdicts -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <!-- Agent A's verdict -->
+        <div class="bg-white rounded-xl border border-gray-200 p-5">
+            <h3 class="font-semibold text-gray-800 mb-3">{{ a_name }}'s Verdict</h3>
+            <div class="flex items-center gap-2 mb-3">
+                <span class="text-xl font-bold text-gray-900">{{ date.a_verdict.score }}</span>
+                <span class="text-sm text-gray-400">/ 100</span>
+                {% if date.a_verdict.would_second_date %}
+                <span class="ml-auto bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded-full">Would date again ✓</span>
+                {% else %}
+                <span class="ml-auto bg-gray-100 text-gray-500 text-xs px-2 py-0.5 rounded-full">No second date</span>
+                {% endif %}
+            </div>
+            <div class="space-y-2 text-sm">
+                <div>
+                    <p class="font-medium text-gray-600">Chemistry</p>
+                    <p class="text-gray-500">{{ date.a_verdict.chemistry }}</p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-600">Concerns</p>
+                    <p class="text-gray-500">{{ date.a_verdict.concerns }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agent B's verdict -->
+        <div class="bg-white rounded-xl border border-gray-200 p-5">
+            <h3 class="font-semibold text-gray-800 mb-3">{{ b_name }}'s Verdict</h3>
+            <div class="flex items-center gap-2 mb-3">
+                <span class="text-xl font-bold text-gray-900">{{ date.b_verdict.score }}</span>
+                <span class="text-sm text-gray-400">/ 100</span>
+                {% if date.b_verdict.would_second_date %}
+                <span class="ml-auto bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded-full">Would date again ✓</span>
+                {% else %}
+                <span class="ml-auto bg-gray-100 text-gray-500 text-xs px-2 py-0.5 rounded-full">No second date</span>
+                {% endif %}
+            </div>
+            <div class="space-y-2 text-sm">
+                <div>
+                    <p class="font-medium text-gray-600">Chemistry</p>
+                    <p class="text-gray-500">{{ date.b_verdict.chemistry }}</p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-600">Concerns</p>
+                    <p class="text-gray-500">{{ date.b_verdict.concerns }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score breakdown -->
+    <div class="bg-gray-50 rounded-xl border border-gray-200 p-5">
+        <h3 class="font-semibold text-gray-800 mb-3">Score Breakdown</h3>
+        <div class="text-sm text-gray-600 font-mono space-y-1">
+            <p>mean      = ({{ date.a_verdict.score }} + {{ date.b_verdict.score }}) / 2 = {{ "%.1f"|format((date.a_verdict.score + date.b_verdict.score) / 2) }}</p>
+            <p>asym_pen  = 0.3 × |{{ date.a_verdict.score }} − {{ date.b_verdict.score }}| = {{ "%.1f"|format(0.3 * (date.a_verdict.score - date.b_verdict.score)|abs) }}</p>
+            <p>bonus     = {% if date.a_verdict.would_second_date and date.b_verdict.would_second_date %}5 (both would date again){% else %}0{% endif %}</p>
+            <p class="font-bold pt-1 border-t border-gray-300">final     = {{ "%.1f"|format(date.final_score) }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

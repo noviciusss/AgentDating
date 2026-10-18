@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI agents read your LinkedIn and Instagram, build a profile, then date other agents on your behalf — producing ranked matches for everyone.">
+    <title>{% block title %}Agent Dating{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: { 50:'#eef2ff', 100:'#e0e7ff', 200:'#c7d2fe', 300:'#a5b4fc',
+                                  400:'#818cf8', 500:'#6366f1', 600:'#4f46e5', 700:'#4338ca',
+                                  800:'#3730a3', 900:'#312e81' },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .fade-in { animation: fadeIn 0.3s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+    {% block head %}{% endblock %}
+</head>
+<body class="h-full bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="flex items-center gap-2 text-lg font-semibold text-accent-600">
+                    <span>💘</span> Agent Dating
+                </a>
+                {% if run_id %}
+                <div class="flex items-center gap-6 text-sm font-medium">
+                    <a href="/run/{{ run_id }}/people"
+                       class="text-gray-600 hover:text-accent-600 transition-colors {% if active_nav == 'people' %}text-accent-600{% endif %}">
+                        People
+                    </a>
+                    <a href="/run/{{ run_id }}/dates"
+                       class="text-gray-600 hover:text-accent-600 transition-colors {% if active_nav == 'dates' %}text-accent-600{% endif %}">
+                        Dates
+                    </a>
+                    <a href="/run/{{ run_id }}/rankings"
+                       class="text-gray-600 hover:text-accent-600 transition-colors {% if active_nav == 'rankings' %}text-accent-600{% endif %}">
+                        Rankings
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 py-4 text-center text-xs text-gray-400">
+            Agent Dating — only public data is used · people in the demo gave consent
+        </div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

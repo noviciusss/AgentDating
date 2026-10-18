@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: agent-dating
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: LLM_PROVIDER
+        value: groq
+      - key: LLM_BASE_URL
+        value: https://api.groq.com/openai/v1
+      - key: ANALYSIS_MODEL
+        value: openai/gpt-oss-120b
+      - key: DATE_MODEL
+        value: openai/gpt-oss-20b
+      - key: FALLBACK_BASE_URL
+        value: https://generativelanguage.googleapis.com/v1beta/openai/
+      - key: LLM_RPM
+        value: "25"
+      - key: MAX_CONCURRENCY
+        value: "4"
+      - key: SCRAPE_CONCURRENCY
+        value: "5"
+      - key: TOP_K_SHORTLIST
+        value: "3"
+      - key: TOP_N_RANKING
+        value: "5"
+      - key: MAX_PAIRS
+        value: "50"
+      - key: APIFY_TOKEN
+        sync: false
+      - key: LLM_API_KEY
+        sync: false
+      - key: FALLBACK_API_KEY
+        sync: false
+      - key: FALLBACK_MODEL
+        sync: false

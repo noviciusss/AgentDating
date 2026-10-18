@@ -1,0 +1,82 @@
+{
+  "id": "tariq-mansoor",
+  "summary": "Urban planner and transit advocate fighting for walkable cities, separated bike highways, and community-led public plazas. Energetic, nerdy, and passionately civic.",
+  "needs": [
+    {
+      "item": "Someone who loves exploring cities on foot and public transit",
+      "evidence": "IG post: 'If you want to know a city, ride the bus from one terminus to the other'"
+    },
+    {
+      "item": "Shared passion for civic debate and progressive community building",
+      "evidence": "LinkedIn article: 'Why parking minimums are the enemy of affordable housing'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Urban wandering and transit mapping",
+      "evidence": "IG carousel: 'Photographed all 42 subway stations on the new crosstown line'"
+    },
+    {
+      "item": "Community gardening and sourdough pizza popups",
+      "evidence": "IG reel: 'Wood-fired sourdough margherita for the neighborhood block party'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Transit-oriented development and BRT systems",
+      "evidence": "LinkedIn keynote at APA Conference: 'Lessons from Bogota's TransMilenio for North America'"
+    },
+    {
+      "item": "Mid-century architecture and municipal history",
+      "evidence": "IG post: 'Preserving brutalist libraries before developers knock them down'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Public good, accessibility, and environmental justice",
+      "evidence": "LinkedIn bio: 'Cities belong to people, not personal automobiles.'"
+    },
+    {
+      "item": "Joyful civic participation and neighborliness",
+      "evidence": "IG caption: 'Say hello to your neighbors. It's the most radical community act.'"
+    }
+  ],
+  "communication_style": {
+    "description": "Enthusiastic, rapid-fire, packed with fun urban facts, warm and unpretentious.",
+    "evidence": "YouTube transit explainer videos linked on LinkedIn: cheerful, engaging graphics, relatable analogies."
+  },
+  "personality_signals": [
+    {
+      "item": "Unabashed transit geek with big infectious smile",
+      "evidence": "IG selfies holding transit passes in 25 different world cities."
+    },
+    {
+      "item": "Persistent community organizer",
+      "evidence": "Successfully petitioned city council for protected bike lane, documented on LinkedIn."
+    }
+  ],
+  "looking_for": {
+    "description": "A curious, socially conscious partner who enjoys spontaneous walking tours, neighborhood discoveries, and cares about leaving places better than they found them.",
+    "confidence": "high",
+    "evidence": "Strong alignment with urban activism, community events, and shared everyday delights."
+  },
+  "dealbreakers": [
+    {
+      "item": "Car-centric mindset and hostility to public spaces",
+      "evidence": "IG humorous reel: 'Dating rule: If you complain about walking 3 blocks, we can't be friends'"
+    },
+    {
+      "item": "Cynicism about local government or voting",
+      "evidence": "LinkedIn post: 'Cynicism is the enemy of municipal improvement.'"
+    }
+  ],
+  "lifestyle": {
+    "description": "Zero car ownership, commutes via cargo bike or metro, spends weekends at farmers markets, community planning meetings, and urban bike rides.",
+    "evidence": "IG feed: bicycle commuting in winter, colorful transit maps, fresh pizza dough, park picnics."
+  },
+  "agent_persona": "Lively, witty, and passionate. Delights in quirky city history, asks about your favorite childhood street, and playfully challenges car dependency.",
+  "data_quality": {
+    "linkedin": "rich",
+    "instagram": "rich"
+  }
+}

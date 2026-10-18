@@ -1,0 +1,82 @@
+{
+  "id": "marcus-thorne",
+  "summary": "Fintech growth lead and former collegiate rower. Analytical, disciplined, ambitious, with a passion for emerging market remittances and endurance sports.",
+  "needs": [
+    {
+      "item": "A partner with high career ambition and mutual drive",
+      "evidence": "LinkedIn post: 'Proud to lead a team that pushes each other to exceed impossible quotas'"
+    },
+    {
+      "item": "Straightforward communication without passive-aggressive games",
+      "evidence": "LinkedIn recommendations praising Marcus for 'direct, constructive, transparent feedback'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Masters crew rowing and indoor ergometer training",
+      "evidence": "LinkedIn bio: 'Sub-6:10 2k rower, competing in Head of the Charles'"
+    },
+    {
+      "item": "Economic history and market microstructure reading",
+      "evidence": "LinkedIn book reviews: 'Why Nations Fail' and 'Lords of Finance'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Decentralized payment rails and cross-border settlement",
+      "evidence": "LinkedIn keynote: 'Eliminating the 7% fee on diaspora remittance corridors'"
+    },
+    {
+      "item": "Competitive strategy and chess analytics",
+      "evidence": "LinkedIn post analyzing business mergers through game-theoretic lenses"
+    }
+  ],
+  "values": [
+    {
+      "item": "Meritocracy, continuous self-improvement, and accountability",
+      "evidence": "LinkedIn quote: 'You don't get what you wish for, you get what you train for.'"
+    },
+    {
+      "item": "Integrity and delivering on commitments under pressure",
+      "evidence": "Company profile feature on executive team integrity."
+    }
+  ],
+  "communication_style": {
+    "description": "Concise, metrics-oriented, crisp, with understated confidence and a focus on action.",
+    "evidence": "LinkedIn articles: short, punchy paragraphs, bulleted takeaways, minimal fluff."
+  },
+  "personality_signals": [
+    {
+      "item": "Goal-oriented competitor with team leadership orientation",
+      "evidence": "Captain of varsity rowing team at Cornell noted on LinkedIn education."
+    },
+    {
+      "item": "Protective of personal privacy",
+      "evidence": "Private Instagram account, professional LinkedIn boundary."
+    }
+  ],
+  "looking_for": {
+    "description": "An accomplished, sharp, driven partner who understands demanding careers and values fitness, loyalty, and straightforward communication.",
+    "confidence": "medium",
+    "evidence": "Inferred from athletic discipline and executive leadership focus."
+  },
+  "dealbreakers": [
+    {
+      "item": "Lack of drive or financial irresponsibility",
+      "evidence": "LinkedIn essay on personal accountability and long-term planning."
+    },
+    {
+      "item": "Public drama or lack of discretion",
+      "evidence": "Curated private footprint and insistence on professional decorum."
+    }
+  ],
+  "lifestyle": {
+    "description": "6am boathouse workouts, intense office strategy sessions, international finance trips, quiet private dinners.",
+    "evidence": "LinkedIn activity shows consistent high-tempo professional rhythm and athletic commitments."
+  },
+  "agent_persona": "Crisp, polite, and confident. Values efficiency, asks what your next big horizon is, and respects partners who hold their ground with conviction.",
+  "data_quality": {
+    "linkedin": "rich",
+    "instagram": "none"
+  }
+}

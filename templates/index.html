@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+{% block title %}Agent Dating — Home{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <!-- Hero -->
+    <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold text-gray-900 mb-3">Agent Dating</h1>
+        <p class="text-gray-500 text-lg leading-relaxed max-w-xl mx-auto">
+            Each person gets an AI agent that reads their LinkedIn and public Instagram,
+            builds a profile, then dates other agents on their behalf.
+        </p>
+    </div>
+
+    <!-- Demo button -->
+    <div class="bg-accent-50 border border-accent-200 rounded-xl p-6 mb-8 text-center">
+        <h2 class="text-lg font-semibold text-accent-800 mb-2">Try the Demo</h2>
+        <p class="text-sm text-accent-600 mb-4">
+            Load pre-computed results for 25+ people. No API keys needed.
+        </p>
+        <button id="btn-load-demo"
+                onclick="loadDemo()"
+                class="bg-accent-600 text-white px-6 py-2.5 rounded-lg font-medium
+                       hover:bg-accent-700 transition-colors focus:outline-none focus:ring-2
+                       focus:ring-accent-500 focus:ring-offset-2">
+            Load Demo
+        </button>
+    </div>
+
+    <!-- OR divider -->
+    <div class="flex items-center gap-4 mb-8">
+        <div class="flex-1 h-px bg-gray-200"></div>
+        <span class="text-xs font-medium text-gray-400 uppercase tracking-wider">or run your own</span>
+        <div class="flex-1 h-px bg-gray-200"></div>
+    </div>
+
+    <!-- Input form -->
+    <form id="run-form" onsubmit="startRun(event)" class="space-y-6">
+        <!-- Person entries -->
+        <div id="people-entries" class="space-y-3">
+            <div class="person-entry grid grid-cols-[1fr_1fr_auto] gap-3 items-start">
+                <input type="url" name="linkedin_url" placeholder="LinkedIn URL"
+                       class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm
+                              focus:border-accent-500 focus:ring-1 focus:ring-accent-500">
+                <input type="url" name="instagram_url" placeholder="Instagram URL"
+                       class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm
+                              focus:border-accent-500 focus:ring-1 focus:ring-accent-500">
+                <button type="button" onclick="this.closest('.person-entry').remove()"
+                        class="text-gray-400 hover:text-red-500 p-2 transition-colors" title="Remove">
+                    ✕
+                </button>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <button type="button" id="btn-add-person" onclick="addPersonRow()"
+                    class="text-sm font-medium text-accent-600 hover:text-accent-700 transition-colors">
+                + Add person
+            </button>
+            <span class="text-gray-300">|</span>
+            <button type="button" id="btn-toggle-csv" onclick="toggleCsvInput()"
+                    class="text-sm font-medium text-gray-500 hover:text-gray-700 transition-colors">
+                Paste CSV instead
+            </button>
+        </div>
+
+        <!-- CSV textarea (hidden by default) -->
+        <div id="csv-input-wrapper" class="hidden">
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+                Paste CSV <span class="text-gray-400 font-normal">(name,linkedin_url,instagram_url)</span>
+            </label>
+            <textarea id="csv-input" rows="6" placeholder="name,linkedin_url,instagram_url
+John Doe,https://www.linkedin.com/in/johndoe,https://www.instagram.com/johndoe"
+                      class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-mono
+                             focus:border-accent-500 focus:ring-1 focus:ring-accent-500"></textarea>
+        </div>
+
+        <p class="text-xs text-gray-400">Minimum 3 people to run. Each needs at least one public URL.</p>
+
+        <button type="submit" id="btn-run"
+                class="w-full bg-gray-900 text-white py-2.5 rounded-lg font-medium
+                       hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2
+                       focus:ring-gray-700 focus:ring-offset-2">
+            Run
+        </button>
+    </form>
+
+    <!-- Progress panel (hidden until a run starts) -->
+    <div id="progress-panel" class="hidden mt-8 bg-white border border-gray-200 rounded-xl p-6">
+        <h3 class="font-semibold text-gray-800 mb-4">Pipeline Progress</h3>
+        <div id="progress-stages" class="space-y-3">
+            <!-- Populated by JS -->
+        </div>
+        <div id="progress-message" class="mt-4 text-sm text-gray-500"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function addPersonRow() {
+    const container = document.getElementById('people-entries');
+    const row = document.createElement('div');
+    row.className = 'person-entry grid grid-cols-[1fr_1fr_auto] gap-3 items-start fade-in';
+    row.innerHTML = `
+        <input type="url" name="linkedin_url" placeholder="LinkedIn URL"
+               class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm
+                      focus:border-accent-500 focus:ring-1 focus:ring-accent-500">
+        <input type="url" name="instagram_url" placeholder="Instagram URL"
+               class="block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm
+                      focus:border-accent-500 focus:ring-1 focus:ring-accent-500">
+        <button type="button" onclick="this.closest('.person-entry').remove()"
+                class="text-gray-400 hover:text-red-500 p-2 transition-colors" title="Remove">
+            ✕
+        </button>
+    `;
+    container.appendChild(row);
+}
+
+function toggleCsvInput() {
+    const wrapper = document.getElementById('csv-input-wrapper');
+    wrapper.classList.toggle('hidden');
+}
+
+async function loadDemo() {
+    const btn = document.getElementById('btn-load-demo');
+    btn.disabled = true;
+    btn.textContent = 'Loading…';
+    try {
+        const res = await fetch('/api/demo/load', { method: 'POST' });
+        if (!res.ok) throw new Error(await res.text());
+        const data = await res.json();
+        window.location.href = `/run/${data.run_id}/people`;
+    } catch (err) {
+        alert('Failed to load demo: ' + err.message);
+        btn.disabled = false;
+        btn.textContent = 'Load Demo';
+    }
+}
+
+async function startRun(e) {
+    e.preventDefault();
+    const btn = document.getElementById('btn-run');
+    btn.disabled = true;
+    btn.textContent = 'Starting…';
+
+    // Collect people from form rows
+    let people = [];
+    document.querySelectorAll('.person-entry').forEach(row => {
+        const linkedin = row.querySelector('[name=linkedin_url]').value.trim();
+        const instagram = row.querySelector('[name=instagram_url]').value.trim();
+        if (linkedin || instagram) {
+            people.push({ linkedin_url: linkedin, instagram_url: instagram });
+        }
+    });
+
+    // Also parse CSV if visible
+    const csvText = document.getElementById('csv-input').value.trim();
+    if (csvText) {
+        csvText.split('\n').forEach(line => {
+            const parts = line.split(',').map(s => s.trim());
+            if (parts.length >= 3 && parts[1].includes('linkedin.com')) {
+                people.push({ name: parts[0], linkedin_url: parts[1], instagram_url: parts[2] });
+            }
+        });
+    }
+
+    if (people.length < 3) {
+        alert('Need at least 3 people to run.');
+        btn.disabled = false;
+        btn.textContent = 'Run';
+        return;
+    }
+
+    try {
+        const res = await fetch('/api/runs', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ people })
+        });
+        if (!res.ok) throw new Error(await res.text());
+        const data = await res.json();
+
+        // Show progress
+        document.getElementById('progress-panel').classList.remove('hidden');
+        connectSSE(data.run_id);
+    } catch (err) {
+        alert('Failed to start run: ' + err.message);
+        btn.disabled = false;
+        btn.textContent = 'Run';
+    }
+}
+
+function connectSSE(runId) {
+    const stages = ['scrape', 'analyze', 'shortlist', 'date', 'rank', 'done'];
+    const container = document.getElementById('progress-stages');
+    container.innerHTML = stages.map(s => `
+        <div id="stage-${s}" class="flex items-center gap-3">
+            <span class="stage-icon w-5 h-5 rounded-full border-2 border-gray-300 flex-shrink-0"></span>
+            <span class="text-sm font-medium text-gray-500 capitalize">${s}</span>
+            <span class="stage-detail text-xs text-gray-400 ml-auto"></span>
+        </div>
+    `).join('');
+
+    const source = new EventSource(`/api/runs/${runId}/events`);
+    let pollFallback = null;
+
+    source.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        updateProgress(data, runId);
+    };
+
+    source.onerror = () => {
+        source.close();
+        // Fallback to polling
+        if (!pollFallback) {
+            pollFallback = setInterval(async () => {
+                try {
+                    const res = await fetch(`/api/runs/${runId}`);
+                    const data = await res.json();
+                    if (data.status === 'completed' || data.status === 'failed') {
+                        clearInterval(pollFallback);
+                        if (data.status === 'completed') {
+                            window.location.href = `/run/${runId}/people`;
+                        }
+                    }
+                } catch (_) {}
+            }, 2000);
+        }
+    };
+}
+
+function updateProgress(data, runId) {
+    const msgEl = document.getElementById('progress-message');
+    msgEl.textContent = data.message || '';
+
+    // Mark stages
+    const stageEl = document.getElementById(`stage-${data.stage}`);
+    if (stageEl) {
+        const icon = stageEl.querySelector('.stage-icon');
+        const detail = stageEl.querySelector('.stage-detail');
+        icon.className = 'stage-icon w-5 h-5 rounded-full flex-shrink-0 bg-accent-500';
+        detail.textContent = data.total > 0 ? `${data.done}/${data.total}` : '';
+    }
+
+    if (data.stage === 'done') {
+        setTimeout(() => { window.location.href = `/run/${runId}/people`; }, 500);
+    }
+}
+
+// Add initial rows
+for (let i = 0; i < 2; i++) addPersonRow();
+// Remove the template row if there are now 3
+const entries = document.querySelectorAll('.person-entry');
+if (entries.length > 3) entries[0].remove();
+</script>
+{% endblock %}

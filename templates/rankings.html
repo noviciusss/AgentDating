@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Rankings — Agent Dating{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <h1 class="text-2xl font-bold text-gray-900 mb-6">Rankings</h1>
+
+    <!-- Person selector -->
+    {% if rankings %}
+    <div class="mb-6">
+        <label class="block text-sm font-medium text-gray-600 mb-1">Jump to person</label>
+        <select id="person-jump" onchange="jumpToPerson(this.value)"
+                class="rounded-lg border border-gray-300 px-3 py-2 text-sm
+                       focus:border-accent-500 focus:ring-1 focus:ring-accent-500">
+            <option value="">Select…</option>
+            {% for r in rankings %}
+            <option value="{{ r.person_id }}">{{ names.get(r.person_id, r.person_id) }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    {% endif %}
+
+    <!-- Ranking cards -->
+    <div class="space-y-4">
+        {% for r in rankings %}
+        <div id="person-{{ r.person_id }}" class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+            <button onclick="toggleCard('{{ r.person_id }}')"
+                    class="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors">
+                <h2 class="text-lg font-semibold text-gray-800">
+                    <a href="/run/{{ run_id }}/person/{{ r.person_id }}" class="hover:text-accent-600">
+                        {{ names.get(r.person_id, r.person_id) }}
+                    </a>
+                </h2>
+                <span class="text-gray-400 card-chevron" id="chevron-{{ r.person_id }}">▼</span>
+            </button>
+            <div id="matches-{{ r.person_id }}" class="hidden border-t border-gray-100">
+                {% if r.matches %}
+                <div class="divide-y divide-gray-50">
+                    {% for m in r.matches %}
+                    <div class="px-5 py-3 flex items-center gap-4">
+                        <span class="text-sm font-bold text-gray-300 w-5 text-right">#{{ loop.index }}</span>
+                        <div class="flex-1 min-w-0">
+                            <a href="/run/{{ run_id }}/person/{{ m.other_id }}"
+                               class="text-sm font-medium text-gray-800 hover:text-accent-600">
+                                {{ names.get(m.other_id, m.other_id) }}
+                            </a>
+                            <p class="text-xs text-gray-400 mt-0.5 line-clamp-2">{{ m.reason }}</p>
+                        </div>
+                        <div class="flex items-center gap-3 flex-shrink-0">
+                            {% if not m.dated %}
+                            <span class="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">similarity</span>
+                            {% endif %}
+                            <span class="text-sm font-bold text-accent-600">{{ "%.1f"|format(m.score) }}</span>
+                            {% if m.dated and m.date_ref %}
+                            <a href="/run/{{ run_id }}/date/{{ m.date_ref }}"
+                               class="text-xs text-accent-500 hover:underline">transcript</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="px-5 py-4 text-sm text-gray-400">No matches available.</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+function toggleCard(personId) {
+    const matches = document.getElementById(`matches-${personId}`);
+    const chevron = document.getElementById(`chevron-${personId}`);
+    matches.classList.toggle('hidden');
+    chevron.textContent = matches.classList.contains('hidden') ? '▼' : '▲';
+}
+
+function jumpToPerson(personId) {
+    if (!personId) return;
+    const el = document.getElementById(`person-${personId}`);
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Expand it
+        const matches = document.getElementById(`matches-${personId}`);
+        if (matches.classList.contains('hidden')) toggleCard(personId);
+    }
+}
+</script>
+{% endblock %}
