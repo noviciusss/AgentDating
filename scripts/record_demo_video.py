@@ -23,6 +23,16 @@ RAW_VIDEO_DIR = VIDEO_DIR / "raw"
 RAW_VIDEO_DIR.mkdir(parents=True, exist_ok=True)
 FINAL_MP4 = VIDEO_DIR / "demo.mp4"
 
+async def smooth_scroll(page, target_y: int, duration_sec: float):
+    steps = int(duration_sec * 30)
+    delay = duration_sec / max(1, steps)
+    current_y = await page.evaluate("window.scrollY")
+    distance = target_y - current_y
+    for i in range(1, steps + 1):
+        step_y = current_y + (distance * (i / steps))
+        await page.evaluate(f"window.scrollTo(0, {step_y})")
+        await asyncio.sleep(delay)
+
 async def set_caption(page, text: str):
     await page.evaluate("""(captionText) => {
         let el = document.getElementById('demo-caption-overlay');
@@ -159,15 +169,24 @@ async def record():
         print("[2:10 - 2:45] Section 6: Rankings Page & Match Reasons")
         await page.goto("http://127.0.0.1:8000/run/demo/rankings", wait_until="networkidle")
         await set_caption(page, "Ranked by mutual score with an asymmetry penalty.")
-        await page.wait_for_timeout(4000)
-        await smooth_scroll(page, target_y=400, duration_sec=8.0)
+        await page.wait_for_timeout(3000)
+
+        # Expand the first person card to reveal ranked matches and reasons
+        first_card_btn = page.locator("button[onclick*='toggleCard']").first
+        if await first_card_btn.is_visible():
+            await first_card_btn.click()
+            print("  Expanded first rankings card")
+            await page.wait_for_timeout(2000)
+
+        await smooth_scroll(page, target_y=320, duration_sec=6.0)
         await page.wait_for_timeout(4000)
 
         # Click on a match link to jump to transcript
         match_links = page.locator("a[href*='/date/']")
         if await match_links.count() > 0:
             first_link = match_links.first
-            await first_link.click()
+            await first_link.scroll_into_view_if_needed()
+            await first_link.click(force=True)
             await page.wait_for_load_state("networkidle")
             await set_caption(page, "Ranked by mutual score with an asymmetry penalty.")
             await page.wait_for_timeout(10000)

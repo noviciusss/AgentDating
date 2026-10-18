@@ -26,3 +26,6 @@ data/demo_backup_synthetic/
 # OS
 .DS_Store
 Thumbs.db
+
+# Video raw recordings
+video/raw/
