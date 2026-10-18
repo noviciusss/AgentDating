@@ -53,9 +53,9 @@ DATE_SCORING_TEMPLATE = """The date is over. Privately evaluate how well this ma
 
 
 def get_opening_or_closing_hint(turn_no: int) -> str:
-    """Return the appropriate hint for the turn number (1-6)."""
+    """Return the appropriate hint for the turn number (1-4)."""
     if turn_no == 1:
         return "Open warmly and break the ice."
-    elif turn_no >= 5:
+    elif turn_no >= 3:
         return "Start wrapping up the date naturally."
-    return ""
+    return "React warmly and ask a good question."

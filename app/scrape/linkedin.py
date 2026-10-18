@@ -14,38 +14,54 @@ from app.scrape.cache import get_cached, set_cached, normalize_url
 logger = logging.getLogger(__name__)
 
 
+def _to_str(val) -> str:
+    if val is None:
+        return ""
+    if isinstance(val, str):
+        return val.strip()
+    if isinstance(val, dict):
+        return (val.get("linkedinText") or val.get("name") or val.get("city") or 
+                val.get("title") or val.get("text") or str(val)).strip()
+    return str(val).strip()
+
+
 def _normalize_actor_output(raw: dict, url: str) -> RawLinkedIn:
     """Normalize the actor's raw output into our RawLinkedIn schema.
     Adapt this function when swapping to a different actor.
     """
+    first_last = f"{_to_str(raw.get('firstName'))} {_to_str(raw.get('lastName'))}".strip()
     return RawLinkedIn(
         url=url,
-        name=raw.get("fullName") or raw.get("name") or "",
-        headline=raw.get("headline") or raw.get("title") or "",
-        about=raw.get("about") or raw.get("summary") or raw.get("description") or "",
-        location=raw.get("location") or raw.get("addressLocality") or "",
+        name=_to_str(raw.get("fullName") or raw.get("name") or first_last),
+        headline=_to_str(raw.get("headline") or raw.get("title")),
+        about=_to_str(raw.get("about") or raw.get("summary") or raw.get("description")),
+        location=_to_str(raw.get("location") or raw.get("addressLocality")),
         experience=[
             LinkedInExperience(
-                title=exp.get("title") or "",
-                company=exp.get("companyName") or exp.get("company") or "",
-                description=exp.get("description") or "",
+                title=_to_str(exp.get("title")),
+                company=_to_str(exp.get("companyName") or exp.get("company")),
+                description=_to_str(exp.get("description")),
             )
             for exp in (raw.get("experience") or raw.get("positions") or [])
             if isinstance(exp, dict)
         ],
         education=[
             LinkedInEducation(
-                school=edu.get("schoolName") or edu.get("school") or "",
-                degree=edu.get("degreeName") or edu.get("degree") or "",
+                school=_to_str(edu.get("schoolName") or edu.get("school")),
+                degree=_to_str(edu.get("degreeName") or edu.get("degree")),
             )
             for edu in (raw.get("education") or raw.get("educations") or [])
             if isinstance(edu, dict)
         ],
-        skills=raw.get("skills") or [],
+        skills=[
+            (s.get("name") if isinstance(s, dict) else str(s)).strip()
+            for s in (raw.get("skills") or [])
+            if s
+        ][:30],
         posts=[
-            p.get("text") or p.get("postText") or ""
+            (p.get("text") or p.get("postText") or str(p)).strip() if isinstance(p, dict) else str(p).strip()
             for p in (raw.get("posts") or [])
-            if isinstance(p, dict)
+            if p
         ][:10],
     )
 
@@ -63,6 +79,7 @@ async def scrape_linkedin(url: str) -> Optional[RawLinkedIn]:
     results = await run_actor(
         actor_id=APIFY_LINKEDIN_ACTOR,
         run_input={
+            "urls": [url],
             "profileUrls": [url],
             "proxyConfiguration": {"useApifyProxy": True},
         },

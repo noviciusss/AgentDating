@@ -104,6 +104,7 @@ class Profile(BaseModel):
     lifestyle: Lifestyle = Field(default_factory=Lifestyle)
     agent_persona: str = ""
     data_quality: DataQuality = Field(default_factory=DataQuality)
+    model_used: str = ""
 
 
 # ── Date result ────────────────────────────────────────────────────
@@ -128,6 +129,7 @@ class DateResult(BaseModel):
     b_verdict: Verdict = Field(default_factory=Verdict)
     final_score: float = 0.0
     date_failed: bool = False
+    model_used: str = ""
 
 
 # ── Ranking ────────────────────────────────────────────────────────

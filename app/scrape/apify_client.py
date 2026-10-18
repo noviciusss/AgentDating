@@ -40,10 +40,13 @@ async def run_actor(
                 client = _get_client()
                 run = client.actor(actor_id).call(
                     run_input=run_input,
-                    timeout_secs=timeout,
                 )
+                if not run:
+                    return []
                 # Get dataset items
-                dataset_id = run.get("defaultDatasetId")
+                dataset_id = getattr(run, "default_dataset_id", None)
+                if not dataset_id and isinstance(run, dict):
+                    dataset_id = run.get("defaultDatasetId")
                 if not dataset_id:
                     return []
                 items = list(client.dataset(dataset_id).iterate_items())

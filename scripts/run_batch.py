@@ -31,7 +31,7 @@ async def main():
 
     # Read CSV
     people_input = []
-    with open(args.input, 'r', encoding='utf-8') as f:
+    with open(args.input, 'r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
         for row in reader:
             people_input.append({
@@ -86,13 +86,13 @@ async def main():
         rankings_dicts = [r.model_dump() if hasattr(r, 'model_dump') else r for r in rankings]
         (output_dir / "rankings.json").write_text(json.dumps(rankings_dicts, indent=2), encoding='utf-8')
 
-        print(f"\n✅ Output written to {output_dir}")
+        print(f"\n[OK] Output written to {output_dir}")
         print(f"   People:   {len(people_dicts)}")
         print(f"   Profiles: {len(run_data.get('profiles', {}))}")
         print(f"   Dates:    {len(run_data.get('dates', []))}")
         print(f"   Rankings: {len(rankings)}")
     else:
-        print("❌ No run data available")
+        print("[ERROR] No run data available")
         sys.exit(1)
 
 

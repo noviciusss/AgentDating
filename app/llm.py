@@ -54,7 +54,12 @@ _fallback_client: Optional[AsyncOpenAI] = None
 def _get_primary_client() -> AsyncOpenAI:
     global _primary_client
     if _primary_client is None:
-        _primary_client = AsyncOpenAI(base_url=LLM_BASE_URL, api_key=LLM_API_KEY)
+        _primary_client = AsyncOpenAI(
+            base_url=LLM_BASE_URL,
+            api_key=LLM_API_KEY,
+            default_headers={"accept-encoding": "identity"},
+            max_retries=0,
+        )
     return _primary_client
 
 
@@ -63,7 +68,12 @@ def _get_fallback_client() -> Optional[AsyncOpenAI]:
     if not FALLBACK_API_KEY:
         return None
     if _fallback_client is None:
-        _fallback_client = AsyncOpenAI(base_url=FALLBACK_BASE_URL, api_key=FALLBACK_API_KEY)
+        _fallback_client = AsyncOpenAI(
+            base_url=FALLBACK_BASE_URL,
+            api_key=FALLBACK_API_KEY,
+            default_headers={"accept-encoding": "identity"},
+            max_retries=0,
+        )
     return _fallback_client
 
 
@@ -99,13 +109,15 @@ async def call_llm(
     system_prompt: str,
     user_prompt: str,
     model: str = "",
-    max_tokens: int = 2000,
+    max_tokens: int = 1000,
     temperature: float = 0.7,
     json_mode: bool = False,
-) -> str:
+    return_model: bool = False,
+) -> Any:
     """Make an LLM call with rate limiting, retries, and failover.
 
-    Returns the raw response text. Use parse_llm_json() to extract JSON.
+    Returns the raw response text (or tuple (content, model) if return_model=True).
+    Use parse_llm_json() to extract JSON.
     """
     global _consecutive_primary_failures
 
@@ -128,18 +140,24 @@ async def call_llm(
 
     # Decide which client to try first
     use_fallback_first = _consecutive_primary_failures >= _MAX_PRIMARY_FAILURES
-    clients_to_try = []
+    primary_client = _get_primary_client()
+    fb = _get_fallback_client()
 
-    if use_fallback_first:
-        fb = _get_fallback_client()
-        if fb:
-            clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
-        clients_to_try.append(("primary", _get_primary_client(), model))
-    else:
-        clients_to_try.append(("primary", _get_primary_client(), model))
-        fb = _get_fallback_client()
-        if fb:
-            clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
+    # Determine fallback models on Groq
+    groq_models = [model]
+    for alt in ["openai/gpt-oss-20b", "qwen/qwen3.8-27b", "openai/gpt-oss-120b"]:
+        if alt not in groq_models:
+            groq_models.append(alt)
+
+    clients_to_try = []
+    if use_fallback_first and fb:
+        clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
+
+    for m in groq_models:
+        clients_to_try.append(("primary", primary_client, m))
+
+    if not use_fallback_first and fb:
+        clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
 
     last_error = None
     for provider_name, client, use_model in clients_to_try:
@@ -147,6 +165,9 @@ async def call_llm(
             try:
                 await _rate_limiter.acquire()
                 call_kwargs = {**kwargs, "model": use_model}
+                if "qwen" in use_model and call_kwargs.get("max_tokens", 0) > 1000:
+                    call_kwargs["max_tokens"] = 1000
+
                 response = await client.chat.completions.create(**call_kwargs)
                 content = response.choices[0].message.content or ""
 
@@ -154,6 +175,8 @@ async def call_llm(
                 if provider_name == "primary":
                     _consecutive_primary_failures = 0
 
+                if return_model:
+                    return content, use_model
                 return content
 
             except Exception as e:
@@ -166,6 +189,23 @@ async def call_llm(
                     f"status={status} error={err_str[:200]}"
                 )
 
+                # Retry without json_object constraint if model rejected it
+                if ("json_validate_failed" in err_str.lower() or "failed to validate json" in err_str.lower()) and "response_format" in call_kwargs:
+                    logger.info(f"Retrying {use_model} without response_format constraint...")
+                    call_kwargs.pop("response_format", None)
+                    try:
+                        await _rate_limiter.acquire()
+                        response = await client.chat.completions.create(**call_kwargs)
+                        content = response.choices[0].message.content or ""
+                        if provider_name == "primary":
+                            _consecutive_primary_failures = 0
+                        if return_model:
+                            return content, use_model
+                        return content
+                    except Exception as inner_e:
+                        last_error = inner_e
+                        err_str = str(inner_e)
+
                 if provider_name == "primary" and (status == 429 or status >= 500):
                     _consecutive_primary_failures += 1
 
@@ -174,9 +214,21 @@ async def call_llm(
                 if hasattr(e, 'response') and hasattr(e.response, 'headers'):
                     retry_after = e.response.headers.get('Retry-After')
 
+                if "tpd" in err_str.lower() or "tokens per day" in err_str.lower() or status == 413:
+                    logger.info(f"Model {use_model} reached daily limit or prompt too large, immediately switching to next model.")
+                    break
+
+                if status == 429:
+                    if attempt == 0:
+                        wait = float(retry_after) if retry_after else 25.0
+                        logger.info(f"Model {use_model} hit 429 rate limit. Waiting {wait:.1f}s for bucket reset...")
+                        await asyncio.sleep(min(wait, 35))
+                    else:
+                        break
+
                 if attempt == 0:
                     wait = float(retry_after) if retry_after else (2 ** attempt * 2)
-                    await asyncio.sleep(min(wait, 30))
+                    await asyncio.sleep(min(wait, 15))
                 else:
                     break  # Move to next provider
 
@@ -188,7 +240,8 @@ async def call_llm_with_messages(
     model: str = "",
     max_tokens: int = 150,
     temperature: float = 0.9,
-) -> str:
+    return_model: bool = False,
+) -> Any:
     """Make an LLM call with a full message list (used for date turns).
     Same retry/failover logic as call_llm.
     """
@@ -205,18 +258,23 @@ async def call_llm_with_messages(
     }
 
     use_fallback_first = _consecutive_primary_failures >= _MAX_PRIMARY_FAILURES
-    clients_to_try = []
+    primary_client = _get_primary_client()
+    fb = _get_fallback_client()
 
-    if use_fallback_first:
-        fb = _get_fallback_client()
-        if fb:
-            clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
-        clients_to_try.append(("primary", _get_primary_client(), model))
-    else:
-        clients_to_try.append(("primary", _get_primary_client(), model))
-        fb = _get_fallback_client()
-        if fb:
-            clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
+    groq_models = [model]
+    for alt in ["openai/gpt-oss-20b", "qwen/qwen3.8-27b", "openai/gpt-oss-120b"]:
+        if alt not in groq_models:
+            groq_models.append(alt)
+
+    clients_to_try = []
+    if use_fallback_first and fb:
+        clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
+
+    for m in groq_models:
+        clients_to_try.append(("primary", primary_client, m))
+
+    if not use_fallback_first and fb:
+        clients_to_try.append(("fallback", fb, FALLBACK_MODEL or model))
 
     last_error = None
     for provider_name, client, use_model in clients_to_try:
@@ -230,6 +288,8 @@ async def call_llm_with_messages(
                 if provider_name == "primary":
                     _consecutive_primary_failures = 0
 
+                if return_model:
+                    return content, use_model
                 return content
 
             except Exception as e:
@@ -246,9 +306,14 @@ async def call_llm_with_messages(
                 if hasattr(e, 'response') and hasattr(e.response, 'headers'):
                     retry_after = e.response.headers.get('Retry-After')
 
+                err_str = str(e)
+                if "tpd" in err_str.lower() or "tokens per day" in err_str.lower() or status == 413 or status == 429:
+                    logger.info(f"Model {use_model} hit rate limit ({status}), immediately switching to next model.")
+                    break
+
                 if attempt == 0:
                     wait = float(retry_after) if retry_after else (2 ** attempt * 2)
-                    await asyncio.sleep(min(wait, 30))
+                    await asyncio.sleep(min(wait, 15))
                 else:
                     break
 

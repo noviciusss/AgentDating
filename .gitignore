@@ -14,6 +14,8 @@ build/
 data/cache/
 data/runs/
 data/raw/
+data/demo_new/
+data/demo_backup_synthetic/
 
 # IDE
 .vscode/

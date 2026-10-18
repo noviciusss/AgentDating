@@ -12,7 +12,7 @@ import json
 import logging
 from typing import Callable, Optional
 
-from app.config import DATE_MODEL, MAX_CONCURRENCY
+from app.config import DATE_MODEL, ANALYSIS_MODEL, MAX_CONCURRENCY
 from app.llm import call_llm, call_llm_with_messages, parse_llm_json
 from app.models import Profile, DateResult, TranscriptTurn, Verdict
 from app.prompts import (
@@ -24,11 +24,26 @@ from app.prompts import (
 logger = logging.getLogger(__name__)
 
 
+def make_compact_profile(profile: Profile) -> dict:
+    """Compact profile for dating: omits evidence strings and keeps top items to save tokens."""
+    return {
+        "summary": profile.summary,
+        "needs": [n.item for n in profile.needs[:4]],
+        "values": [v.item for v in profile.values[:4]],
+        "hobbies": [h.item for h in profile.hobbies[:4]],
+        "interests": [i.item for i in profile.interests[:4]],
+        "dealbreakers": [d.item for d in profile.dealbreakers[:3]],
+        "looking_for": profile.looking_for.description if hasattr(profile.looking_for, "description") else str(profile.looking_for),
+        "agent_persona": profile.agent_persona,
+    }
+
+
 def _build_system_prompt(name: str, profile: Profile, turn_no: int) -> str:
     """Build the date agent system prompt for a specific turn."""
+    compact = make_compact_profile(profile)
     return DATE_AGENT_SYSTEM_TEMPLATE.format(
         name=name,
-        profile_json=json.dumps(profile.model_dump(), indent=2),
+        profile_json=json.dumps(compact, indent=2),
         agent_persona=profile.agent_persona,
         turn_no=turn_no,
         opening_or_closing_hint=get_opening_or_closing_hint(turn_no),
@@ -50,8 +65,9 @@ async def run_date(
     on_turn is called after each completed turn with (a_id, b_id, turn_no).
     """
     transcript: list[TranscriptTurn] = []
-    total_turns = 6
+    total_turns = 4
 
+    date_model_used = DATE_MODEL
     try:
         for turn_no in range(1, total_turns + 1):
             # Determine whose turn it is
@@ -80,12 +96,14 @@ async def run_date(
                     # B's first turn — the last transcript entry is A's opening
                     pass  # A's message is already added as a user message
 
-            response = await call_llm_with_messages(
+            response, turn_model = await call_llm_with_messages(
                 messages=messages,
                 model=DATE_MODEL,
                 max_tokens=150,
                 temperature=0.9,
+                return_model=True,
             )
+            date_model_used = turn_model
 
             # Clean the response
             text = response.strip().strip('"').strip('*').strip()
@@ -114,6 +132,7 @@ async def run_date(
             a_verdict=a_verdict,
             b_verdict=b_verdict,
             final_score=round(final, 1),
+            model_used=date_model_used,
         )
 
     except Exception as e:
@@ -123,6 +142,7 @@ async def run_date(
             b=b_id,
             transcript=transcript,
             date_failed=True,
+            model_used=date_model_used,
         )
 
 
@@ -139,8 +159,9 @@ async def _score_date(
         for t in transcript
     )
 
+    compact = make_compact_profile(profile)
     system_prompt = f"""You privately evaluate this date for {name}.
-Profile: {json.dumps(profile.model_dump(), indent=2)}
+Profile: {json.dumps(compact, indent=2)}
 
 Date transcript:
 {transcript_text}"""
@@ -154,7 +175,7 @@ Date transcript:
             model=DATE_MODEL,
             max_tokens=300,
             temperature=0.5,
-            json_mode=True,
+            json_mode=False,
         )
         data = parse_llm_json(response)
         return Verdict(

@@ -36,7 +36,7 @@ LLM_BASE_URL: str = os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1")
 LLM_API_KEY: str = os.getenv("LLM_API_KEY", "")
 ANALYSIS_MODEL: str = os.getenv("ANALYSIS_MODEL", "openai/gpt-oss-120b")
 DATE_MODEL: str = os.getenv("DATE_MODEL", "openai/gpt-oss-20b")
-LLM_RPM: int = int(os.getenv("LLM_RPM", "25"))
+LLM_RPM: float = float(os.getenv("LLM_RPM", "25"))
 
 # ── LLM (fallback) ────────────────────────────────────────────────
 FALLBACK_BASE_URL: str = os.getenv("FALLBACK_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
@@ -49,3 +49,7 @@ TOP_K_SHORTLIST: int = int(os.getenv("TOP_K_SHORTLIST", "3"))
 TOP_N_RANKING: int = int(os.getenv("TOP_N_RANKING", "5"))
 MAX_PAIRS: int = int(os.getenv("MAX_PAIRS", "50"))
 MAX_INSTAGRAM_POSTS: int = 20
+MAX_PEOPLE_PER_RUN: int = int(os.getenv("MAX_PEOPLE_PER_RUN", "8"))
+MAX_RUNS_PER_HOUR: int = int(os.getenv("MAX_RUNS_PER_HOUR", "6"))
+MAX_RUNS_PER_IP_PER_HOUR: int = int(os.getenv("MAX_RUNS_PER_IP_PER_HOUR", "2"))
+

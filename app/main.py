@@ -17,7 +17,7 @@ from app.config import TEMPLATES_DIR, STATIC_DIR
 from app.models import Person, ProgressEvent
 from app.jobs import (
     create_run, get_run, subscribe, unsubscribe, load_demo,
-    get_run_data, update_run,
+    get_run_data, update_run, emit,
 )
 from app.pipeline import run_pipeline
 
@@ -174,16 +174,63 @@ async def rankings_page(request: Request, run_id: str):
     })
 
 
+from collections import defaultdict
+import time
+from app.config import (
+    TEMPLATES_DIR, STATIC_DIR,
+    MAX_PEOPLE_PER_RUN, MAX_RUNS_PER_HOUR, MAX_RUNS_PER_IP_PER_HOUR,
+)
+
+_global_run_timestamps: list[float] = []
+_ip_run_timestamps: dict[str, list[float]] = defaultdict(list)
+_pipeline_lock = asyncio.Lock()
+
+
+async def _run_pipeline_queued(run_id: str, people_input: list[dict]):
+    if _pipeline_lock.locked():
+        update_run(run_id, status="queued", current_stage="queued")
+        await emit(run_id, ProgressEvent(
+            stage="queued", done=0, total=1,
+            message="Queued behind another active run. Starting shortly…"
+        ))
+    async with _pipeline_lock:
+        await run_pipeline(run_id, people_input)
+
+
 # ── API Routes ─────────────────────────────────────────────────────
 
 @app.post("/api/runs")
 async def create_new_run(request: Request, background_tasks: BackgroundTasks):
-    """Start a new pipeline run."""
+    """Start a new pipeline run with Section 18.5 protections."""
+    now = time.time()
+    one_hour_ago = now - 3600
+
+    # Clean old timestamps
+    global _global_run_timestamps
+    _global_run_timestamps = [t for t in _global_run_timestamps if t > one_hour_ago]
+
+    client_ip = request.client.host if request.client else "unknown"
+    _ip_run_timestamps[client_ip] = [t for t in _ip_run_timestamps[client_ip] if t > one_hour_ago]
+
+    # Global and IP rate limits
+    if len(_global_run_timestamps) >= MAX_RUNS_PER_HOUR:
+        raise HTTPException(429, f"Hourly limit reached ({MAX_RUNS_PER_HOUR}/hr). Try again later.")
+
+    if len(_ip_run_timestamps[client_ip]) >= MAX_RUNS_PER_IP_PER_HOUR:
+        raise HTTPException(429, f"Rate limit reached for your IP ({MAX_RUNS_PER_IP_PER_HOUR}/hr).")
+
     body = await request.json()
     people_input = body.get("people", [])
 
     if len(people_input) < 3:
         raise HTTPException(400, "Need at least 3 people")
+
+    if len(people_input) > MAX_PEOPLE_PER_RUN:
+        raise HTTPException(400, f"Maximum {MAX_PEOPLE_PER_RUN} people per run on the live site to conserve quotas. The pre-computed demo features 25+ people.")
+
+    # Record run timestamps
+    _global_run_timestamps.append(now)
+    _ip_run_timestamps[client_ip].append(now)
 
     # Create Person objects for the run
     people = []
@@ -196,7 +243,7 @@ async def create_new_run(request: Request, background_tasks: BackgroundTasks):
         ))
 
     run_id = create_run(people)
-    background_tasks.add_task(run_pipeline, run_id, people_input)
+    background_tasks.add_task(_run_pipeline_queued, run_id, people_input)
 
     return JSONResponse({"run_id": run_id})
 
