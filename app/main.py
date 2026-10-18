@@ -174,6 +174,48 @@ async def rankings_page(request: Request, run_id: str):
     })
 
 
+# ── Demo Convenience Routes ─────────────────────────────────────────
+
+@app.get("/rankings", response_class=HTMLResponse)
+async def demo_rankings(request: Request):
+    if not get_run_data("demo"):
+        load_demo()
+    return await rankings_page(request, "demo")
+
+
+@app.get("/person", response_class=HTMLResponse)
+async def demo_person_query(request: Request, id: str = ""):
+    if not get_run_data("demo"):
+        load_demo()
+    if not id:
+        return await people_page(request, "demo")
+    return await person_page(request, "demo", id)
+
+
+@app.get("/person/{person_id}", response_class=HTMLResponse)
+async def demo_person_path(request: Request, person_id: str):
+    if not get_run_data("demo"):
+        load_demo()
+    return await person_page(request, "demo", person_id)
+
+
+@app.get("/date", response_class=HTMLResponse)
+async def demo_date_query(request: Request, a: str = "", b: str = ""):
+    if not get_run_data("demo"):
+        load_demo()
+    if a and b:
+        pair_id = f"{a}__{b}"
+        return await date_page(request, "demo", pair_id)
+    return await dates_page(request, "demo")
+
+
+@app.get("/date/{pair_id}", response_class=HTMLResponse)
+async def demo_date_path(request: Request, pair_id: str):
+    if not get_run_data("demo"):
+        load_demo()
+    return await date_page(request, "demo", pair_id)
+
+
 from collections import defaultdict
 import time
 from app.config import (

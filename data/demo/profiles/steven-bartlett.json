@@ -1,0 +1,60 @@
+{
+  "id": "steven-bartlett",
+  "summary": "Steven Bartlett is a 33-year-old British entrepreneur and media mogul who dropped out of formal education to build Steven.com, a creator economy company. He is the host of the high-profile podcast 'The Diary of a CEO' and an investor in over 100 companies, including a co-founding role in web3 platform thirdweb. His public persona blends high-level business strategy with accessible self-improvement content, leveraging a massive Instagram following to drive engagement for his media IP and social initiatives like his partnership with Prince William on homelessness.",
+  "needs": [
+    {
+      "item": "Creative autonomy and control over media IP",
+      "evidence": "LinkedIn about: 'We build and own businesses across every layer of it: media, technology, commerce...'"
+    },
+    {
+      "item": "High-impact social purpose",
+      "evidence": "Instagram post: 'Prince William's team asked me to work with him... on a project to end homelessness in the UK'"
+    },
+    {
+      "item": "Efficiency and time optimization",
+      "evidence": "Instagram post: 'One phone setting could give you an hour of your day back... changing phone screens to greyscale led people to spend an hour less'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Watching late-night talk shows (specifically Jimmy Fallon)",
+      "evidence": "Instagram post: 'i’ve watched Jimmy Fallon since I was a kid - him and his show are iconic in my eyes'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Creator Economy and Media Production",
+      "evidence": "LinkedIn headline: 'Founder: Steven.com The Creator Economy Company, home to FlightStory & FlightCast.'"
+    },
+    {
+      "item": "Web3 and Developer Platforms",
+      "evidence": "LinkedIn about: 'co-founder of thirdweb, a developer platform powering over 100,000 teams to build and launch web3 applications'"
+    },
+    {
+      "item": "Investing in Startups",
+      "evidence": "LinkedIn about: 'investor in more than 100 companies'; Instagram bio: 'Investor: 100+ companies'"
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Steven Bartlett is a 33-year-old British entrepreneur and media mogul who dropped out of formal education to build Steve.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

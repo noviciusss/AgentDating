@@ -1,0 +1,82 @@
+{
+  "id": "rishabh-jain",
+  "summary": "Rishabh Jain is a serial entrepreneur and educator based in Jaipur, India, with a background in Civil Engineering from IIT Bombay. He has founded 9 ventures over 15 years, with current focus on AI-led founder communities (APEs) and a massive personal finance/law YouTube channel (LLA). His public persona blends high-level business strategy with community building, storytelling, and a strong emphasis on mentorship for early-stage founders.",
+  "needs": [
+    {
+      "item": "Intellectual stimulation and collaboration with other builders/founders",
+      "evidence": "LinkedIn headline: 'On a mission to help 50k founders go from Zero to One'; IG bio: 'Collecting stories & life lessons'"
+    },
+    {
+      "item": "Recognition for community impact and scale",
+      "evidence": "LinkedIn: '9x Founder (4 Scaled, 2 Failed, Lessons from all)'; IG post: 'I dreamed of hosting a houseful event with 1,500 people'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Hosting and organizing social/community events (parties, retreats, festivals)",
+      "evidence": "IG post: 'Hosted 5th Cool People Only Party'; IG post: 'Retreat 5.0... A trip full of madness, music, laughter'"
+    },
+    {
+      "item": "Travel and photography",
+      "evidence": "IG post: 'Shot by @vankayl... Shot @ LLA studio'; IG post: 'This was unexpected, Most Chinese folks are warm...'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Personal finance, taxation, and labor law education",
+      "evidence": "LinkedIn: 'Labour Law Advisor... evolved to provide in-depth videos on Personal Finance: tax, scam'; Skills: 'Individual Taxation', 'Labor and Employment Law'"
+    },
+    {
+      "item": "AI and technology-driven entrepreneurship",
+      "evidence": "LinkedIn: 'Co-founder @APEs... India’s first AI-focused founder community'"
+    },
+    {
+      "item": "Music and local culture",
+      "evidence": "IG bio: '@pinkodyssey.lla'; IG post tagging '@nivedan_music' at a party"
+    }
+  ],
+  "values": [
+    {
+      "item": "Resilience and learning from failure",
+      "evidence": "LinkedIn: 'Some scaled, some failed, but each shaped the entrepreneur I am today'"
+    },
+    {
+      "item": "Community and mentorship",
+      "evidence": "LinkedIn: 'Creator | Educator'; IG bio: 'Collecting stories & life lessons'"
+    },
+    {
+      "item": "Ambition and scaling",
+      "evidence": "LinkedIn: 'help 50k founders go from Zero to One'; IG post: 'DreamBig' hashtag"
+    }
+  ],
+  "communication_style": {
+    "description": "Narrative-driven and inspirational; Direct and professional in business contexts",
+    "evidence": "IG post: 'Embrace change.'; IG post: 'I was sitting in the first row... That day I dreamed...'; LinkedIn headline uses specific metrics: '2,500+ founders', 'Billion+ Views'"
+  },
+  "personality_signals": [
+    {
+      "item": "High energy and sociable",
+      "evidence": "IG posts about 'madness, music, laughter', 'Cool People Only Party', and retreats"
+    },
+    {
+      "item": "Reflective and story-oriented",
+      "evidence": "IG bio: 'Collecting stories & life lessons'; IG post recounting a specific memory from Jodhpur"
+    }
+  ],
+  "looking_for": {
+    "description": "A partner who is ambitious, independent, and understands the demands of a founder lifestyle",
+    "confidence": "medium",
+    "evidence": "Inferred from '9x Founder' status, 'Retreat 5.0' team focus, and 'Cool People Only' social circle"
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Rishabh Jain is a serial entrepreneur and educator based in Jaipur, India, with a background in Civil Engineering from I.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

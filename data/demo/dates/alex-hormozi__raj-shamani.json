@@ -1,0 +1,45 @@
+{
+  "a": "alex-hormozi",
+  "b": "raj-shamani",
+  "transcript": [
+    {
+      "speaker": "a",
+      "text": "Hey, great to finally meet you—Alex Hormozi here. I’ve been looking forward to our chat; I love getting into the details that drive real growth. What’s the most exciting thing you’re working on right now?"
+    },
+    {
+      "speaker": "b",
+      "text": "Hey Alex, glad to finally connect—always a thrill to meet someone who’s built a growth engine from scratch. Right now I’m deep in the next episode of Figuring Out Media, where we’re unpacking how"
+    },
+    {
+      "speaker": "a",
+      "text": ""
+    },
+    {
+      "speaker": "b",
+      "text": "That episode is all about the intersection of behavioral psychology and the creator economy—how micro‑habits can scale a brand overnight. I’m also scouting a handful of early‑stage consumer tech startups that could benefit from a strategic media partnership. How do you keep your growth machine humming when the market shifts so fast?"
+    },
+    {
+      "speaker": "a",
+      "text": ""
+    },
+    {
+      "speaker": "b",
+      "text": ""
+    }
+  ],
+  "a_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Expecting value: line 1 column 1 (char 0)",
+    "would_second_date": false
+  },
+  "b_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Expecting value: line 1 column 1 (char 0)",
+    "would_second_date": false
+  },
+  "final_score": 50.0,
+  "date_failed": false,
+  "model_used": "openai/gpt-oss-20b"
+}

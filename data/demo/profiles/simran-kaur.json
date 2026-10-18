@@ -1,0 +1,60 @@
+{
+  "id": "simran-kaur",
+  "summary": "Simran Kaur is a high-profile entrepreneur and media founder based in New York, specializing in financial literacy for women. She is the founder of 'Friends That Invest' and 'The Indian Feminist,' and has been recognized by Forbes 30u30 and as a Young New Zealander of the Year. Her background includes a degree in Optometry from the University of Auckland and participation in the INSEAD Women Impact Entrepreneurship Programme.",
+  "needs": [
+    {
+      "item": "Professional visibility and media exposure",
+      "evidence": "LinkedIn 'about' section lists appearances in Forbes, VOGUE, TEDx, BBC, and ABC News."
+    },
+    {
+      "item": "Access to financial literacy resources for underrepresented groups",
+      "evidence": "LinkedIn 'Friends That Invest' description mentions 'lack of opportunity for young women and minorities to access financial lit...'."
+    }
+  ],
+  "hobbies": [],
+  "interests": [
+    {
+      "item": "Stock market investing and finance",
+      "evidence": "LinkedIn headline and 'about' section identify her as a 'Stock Market Columnist' and founder of the podcast 'Girls That Invest'."
+    },
+    {
+      "item": "South Asian media and culture",
+      "evidence": "LinkedIn experience section details the founding of 'The Indian Feminist,' described as a 'media platform for South Asian'."
+    },
+    {
+      "item": "Public speaking and keynoting",
+      "evidence": "LinkedIn 'about' section lists 'Keynote Speaker' and skills include 'Public Speaking'."
+    }
+  ],
+  "values": [
+    {
+      "item": "Financial empowerment for women",
+      "evidence": "LinkedIn 'Friends That Invest' description highlights the statistic that 'only 27% of women investing' and the platform's mission to address this."
+    },
+    {
+      "item": "Representation and diversity in media",
+      "evidence": "LinkedIn 'The Indian Feminist' description notes it became the 'fastest growing media platform for South Asian'."
+    }
+  ],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Simran Kaur is a high-profile entrepreneur and media founder based in New York, specializing in financial literacy for w.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

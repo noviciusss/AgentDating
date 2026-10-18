@@ -1,0 +1,60 @@
+{
+  "id": "shreya-pattar",
+  "summary": "Shreya Pattar is a Dubai-based founder of SPVentures, a personal branding agency, and a prolific content creator known as 'The LinkedIn Girl.' She has a strong entrepreneurial background, having built a $100k/year freelancing business during her undergraduate studies at Trinity College Dublin. Her public persona is defined by high-energy, direct business advice, a focus on authenticity over 'vanity metrics,' and a significant following across LinkedIn and Instagram (140k+). She positions herself as an educator and coach for founders and solopreneurs.",
+  "needs": [
+    {
+      "item": "Validation of her 'no cringe' content philosophy",
+      "evidence": "LinkedIn About: 'without the cringe or the content burnout'; IG Post: 'Vanity Metrics on social media = Pretty Privilege in a girl'"
+    },
+    {
+      "item": "Opportunities to speak or collaborate at business conferences",
+      "evidence": "IG Post: 'PlanXConference' hashtag; LinkedIn Headline: 'Public Speaker'"
+    },
+    {
+      "item": "Clarity in positioning for her clients",
+      "evidence": "LinkedIn Experience (SPVentures): 'Specialise in helping clients clarify their positioning, craft magnetic messaging'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Traveling to South Asia (specifically Sri Lanka)",
+      "evidence": "IG Post location: 'Negombo, Sri Lanka'; Caption mentions posting 'blurry' photos from the trip"
+    },
+    {
+      "item": "Writing and publishing",
+      "evidence": "LinkedIn Experience (Self Employed): 'Written and released 7 ebooks that have sold $250k+ worth of copies'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "LinkedIn personal branding and thought leadership",
+      "evidence": "LinkedIn Headline: 'The LinkedIn Girl'; IG Bio: 'Business | Mindset | Writing | Life'"
+    },
+    {
+      "item": "Sales psychology and overcoming rejection",
+      "evidence": "IG Post: 'How to not get ghosted after your sales call... overcome your fear of ghosting & rejection'"
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Shreya Pattar is a Dubai-based founder of SPVentures, a personal branding agency, and a prolific content creator known a.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

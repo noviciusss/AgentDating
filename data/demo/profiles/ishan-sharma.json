@@ -1,0 +1,65 @@
+{
+  "id": "ishan-sharma",
+  "summary": "Ishan Sharma is a high-profile tech YouTuber and entrepreneur based in Bengaluru, India. With over 2 million subscribers, he focuses on AI, upskilling, and business content. He co-founded MarkitUp, a growth agency, and co-authored a book on Indian unicorn founders. His recent activity highlights significant international recognition, including representing India at a LinkedIn event in New York.",
+  "needs": [
+    {
+      "item": "Professional networking with global tech and creator communities",
+      "evidence": "LinkedIn: 'Enterprise AI Trainings'; IG: 'Flew to New York as the only creator representing India at LinkedIn’s Connection by Design'"
+    },
+    {
+      "item": "Scalable content production and brand partnerships",
+      "evidence": "LinkedIn: 'MarkitUp has worked with 40+ brands'; IG: 'Building @markitup_in'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Traveling and exploring new cities, specifically New York",
+      "evidence": "IG: '24 hrs SOLO in New York', 'That early morning walk in new york'"
+    },
+    {
+      "item": "Creating and editing video content",
+      "evidence": "LinkedIn Skills: 'Video Editing', 'Content Marketing'; IG Bio: '🎬YouTube'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Artificial Intelligence and emerging tech tools",
+      "evidence": "LinkedIn Headline: 'Enterprise AI Trainings'; IG Post: 'This Claude Skill Can Start Your Business!'"
+    },
+    {
+      "item": "Entrepreneurship and startup stories",
+      "evidence": "LinkedIn: 'co-authored Unlocking Unicorn Secrets'; IG Bio: 'Bestselling Author @unicornsecretbook'"
+    },
+    {
+      "item": "Software development and coding education",
+      "evidence": "LinkedIn: 'I teach Python and Frontend Development to Unacademy Learners'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Empowering others to make a living through skills",
+      "evidence": "LinkedIn About: 'The goal is to help people make a living doing what they love.'"
+    }
+  ],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Ishan Sharma is a high-profile tech YouTuber and entrepreneur based in Bengaluru, India. With over 2 million subscribers.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

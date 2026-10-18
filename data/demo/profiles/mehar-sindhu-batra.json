@@ -1,0 +1,56 @@
+{
+  "id": "mehar-sindhu-batra",
+  "summary": "Mehar Sindhu Batra is a Chartered Accountant and Imperial MBA graduate currently based in Dubai, operating as a high-net-worth real estate investment advisor. She has a significant social media presence (450k+ followers) where she blends professional financial advice with personal narratives about career pivots, motherhood, and the expat experience. Her background spans Big 4 auditing, strategic advisory, and university recruitment/coaching.",
+  "needs": [
+    {
+      "item": "Efficiency and time-saving systems to balance high-level professional work with parenting",
+      "evidence": "Instagram post: 'Career moms need systems, not superpowers... These are the things I happily spend on because they save me time, energy or mental load'"
+    },
+    {
+      "item": "Validation of her career pivot from finance/audit to real estate",
+      "evidence": "LinkedIn About: 'I transitioned into Dubai real estate not to sell units, but because I saw a gap: serious investors deserves a serious advisor.' Instagram post: 'Maybe this chapter is about building a career that fits the person I’ve become.'"
+    },
+    {
+      "item": "Connection with other ambitious women navigating career and family",
+      "evidence": "Instagram bio: 'Career pivots • Motherhood • Dubai life'; Instagram post: 'Confessions of a Career Mom - Episode 1'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Content creation and public speaking",
+      "evidence": "LinkedIn headline: 'Featured on BBC • TEDx • Times of India'; Instagram bio: '🎙️ @realestatewithmehar'"
+    },
+    {
+      "item": "Coaching and mentoring professionals",
+      "evidence": "LinkedIn Experience: 'Hult International Business School: Coached 300+ professionals to build the confidence to take their next big step.'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Cross-border real estate investment and portfolio strategy",
+      "evidence": "LinkedIn About: 'I help you understand whether it belongs in your portfolio... International investors (UK, India, Europe) building cross-border...'"
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Mehar Sindhu Batra is a Chartered Accountant and Imperial MBA graduate currently based in Dubai, operating as a high-net.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

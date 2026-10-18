@@ -1,0 +1,45 @@
+{
+  "a": "jay-shetty",
+  "b": "ranveer-allahbadia",
+  "transcript": [
+    {
+      "speaker": "a",
+      "text": "Hey there, great to finally meet you—hope you’re ready for a little conversation that feels both grounded and uplifting. I’m excited to hear your stories and share a bit about the journey that’s led me from the monastic path to podcasting and beyond. So, tell me, what’s one moment that’s shaped who you are today?"
+    },
+    {
+      "speaker": "b",
+      "text": ""
+    },
+    {
+      "speaker": "a",
+      "text": "That’s wonderful—thanks for sharing. I’d love to learn more about what fuels you each day. When you’re not busy, what’s one activity that brings you a deep sense of purpose or joy?"
+    },
+    {
+      "speaker": "b",
+      "text": "When the studio lights"
+    },
+    {
+      "speaker": "a",
+      "text": ""
+    },
+    {
+      "speaker": "b",
+      "text": ""
+    }
+  ],
+  "a_verdict": {
+    "score": 42,
+    "chemistry": "The interaction lacked the emotional resonance and storytelling depth Jay Shetty values, as the date provided a fragmented, incoherent response ('When the studio lights') that prevented any meaningful connection or validation of purpose. The conversation failed to engage his interests in ancient wisdom or mental wellness, resulting in a static and unfulfilling exchange.",
+    "concerns": "The date's communication was incoherent and did not offer the high-profile network or kindness Jay seeks, making it difficult to establish the authentic, purpose-driven connection he prioritizes. There was no evidence of shared values or mutual interest, leaving Jay without the emotional uplift or intellectual stimulation he expects.",
+    "would_second_date": false
+  },
+  "b_verdict": {
+    "score": 32,
+    "chemistry": "The conversation lacked any genuine exchange, as the date initiated with a scripted, overly formal monologue that failed to provoke a substantive response from Ranveer. The interaction collapsed into fragmented, incoherent text where Ranveer’s reply was cut off, indicating a total breakdown in communication flow.",
+    "concerns": "The date's opening was so generic and performative that it failed to trigger the intellectual stimulation or curiosity Ranveer values, resulting in a non-responsive and disjointed experience. There was zero evidence of shared values or authentic connection, making the interaction feel hollow and unengaging.",
+    "would_second_date": false
+  },
+  "final_score": 34.0,
+  "date_failed": false,
+  "model_used": "openai/gpt-oss-20b"
+}

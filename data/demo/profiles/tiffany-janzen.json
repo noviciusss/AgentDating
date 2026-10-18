@@ -1,0 +1,65 @@
+{
+  "id": "tiffany-janzen",
+  "summary": "Tiffany Janzen is the founder of TiffinTech, a technology media platform focused on AI, semiconductors, and robotics. Based in Toronto, she leverages her background in software development and her education at Stanford University to interview industry leaders and explain complex technical concepts to a global audience of over 1.3 million followers. She is currently transitioning into a new academic or professional chapter at Stanford.",
+  "needs": [
+    {
+      "item": "Professional partnerships and brand collaborations",
+      "evidence": "LinkedIn: 'I advise technology companies...'; Instagram bio: 'partnerships@tiffintech.com'"
+    },
+    {
+      "item": "Access to high-level tech leaders and labs",
+      "evidence": "LinkedIn: 'I go inside labs, technology companies... I interview leaders... including Jensen Huang, Satya Nadella and Mark Zuckerberg'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Explaining technical concepts to a broad audience",
+      "evidence": "Instagram post: 'This blew my mind… your phones GPS finds you using time, not maps...'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Artificial Intelligence and Machine Learning",
+      "evidence": "LinkedIn headline: 'Inside AI, Semiconductors, Robotics & Emerging Technology'; Instagram bio: 'AI/ML @stanford'"
+    },
+    {
+      "item": "Quantum Computing and Fusion Energy",
+      "evidence": "Instagram posts discussing 'quantum computers' and 'fusion reactor' (Type One Energy)"
+    },
+    {
+      "item": "Canadian Tech Industry",
+      "evidence": "Instagram post: 'At @delltech Forum Toronto, I explored what Canadian organizations need...'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Clarity and depth in technical communication",
+      "evidence": "LinkedIn about: 'Most of my work starts with a simple question: what is actually being built, and why does it matter?'"
+    },
+    {
+      "item": "Continuous learning and academic rigor",
+      "evidence": "LinkedIn education: 'Stanford University'; Instagram post: 'We’re starting (adding) a new chapter! @stanford here we come….'"
+    }
+  ],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Tiffany Janzen is the founder of TiffinTech, a technology media platform focused on AI, semiconductors, and robotics. Ba.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

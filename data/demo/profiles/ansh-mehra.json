@@ -1,0 +1,86 @@
+{
+  "id": "ansh-mehra",
+  "summary": "Ansh Mehra is a New Delhi-based founder of The Cutting Edge School, specializing in enterprise AI training and agentic AI enablement. With a background in UX design and marketing at companies like Swiggy and Zuddl, he has pivoted to building an educational brand with significant reach (500K+ YouTube, 346K+ Instagram). He is an active international traveler who blends high-end cultural tourism with professional networking, representing India in global AI championships.",
+  "needs": [
+    {
+      "item": "Professional recognition and validation for his AI education work",
+      "evidence": "LinkedIn About section mentions representing India at Global Prompt Engineering Championship 2025 and training major brands like Intel, HP, and Reliance Digital."
+    },
+    {
+      "item": "Balance between high-intensity business growth and personal time",
+      "evidence": "Instagram post: 'Last 4 months gave The Cutting Edge School new opportunities... made me keep everything else to the side and only focus on our AI Trainings & Courses.'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "International travel with a focus on cultural and historical sites",
+      "evidence": "Instagram posts from Geneva (Musée d’Art et d’Histoire), Bangkok (Dior Gold House), and Seoul."
+    },
+    {
+      "item": "Fashion and personal styling",
+      "evidence": "Instagram post detailing outfit: 'I am wearing a Sage Overshirt by SUBJKT along with their Sage Trousers, coupled with a vest from W...' and hashtags like #ootd."
+    }
+  ],
+  "interests": [
+    {
+      "item": "Artificial Intelligence and Agentic AI",
+      "evidence": "LinkedIn Headline: 'Agentic AI Trainings for Enterprises • Custom Agentic AI Enablement Programs'."
+    },
+    {
+      "item": "UX Design and Prototyping",
+      "evidence": "LinkedIn Experience at Zuddl: 'first UX Designer on board... designing the entire web-platform'; Skills list includes 'UX Design', 'Prototyping'."
+    },
+    {
+      "item": "Mathematics and philosophical concepts applied to life",
+      "evidence": "Instagram post: 'I recently came across a reel that connected life with math. It said “your slope is more important than the y-intercept”...'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Continuous learning and skill acquisition",
+      "evidence": "LinkedIn Experience: 'Founded a School for professionals to learn latest tech skills'; Instagram bio: 'Teaching enterprises how to use real intelligence'."
+    },
+    {
+      "item": "Meritocracy and trajectory over starting point",
+      "evidence": "Instagram post: 'it doesn’t matter where you start in life as compared to others. The true winner is the one who has the sharpest slope'."
+    },
+    {
+      "item": "Accessibility of knowledge",
+      "evidence": "LinkedIn About: 'where we teach students and professionals AI for free.'"
+    }
+  ],
+  "communication_style": {
+    "description": "Professional yet accessible, using analogies to explain complex tech; Detail-oriented in personal updates",
+    "evidence": "LinkedIn About uses clear, direct language about enterprise training; Instagram post uses a math analogy ('slope vs y-intercept') to discuss life success.; Instagram post about Geneva museum includes specific details about the age of artifacts (15,000 years) and specific clothing brands."
+  },
+  "personality_signals": [
+    {
+      "item": "Ambitious and driven",
+      "evidence": "Inferred from rapid scaling of business (training global brands) and active participation in global championships."
+    },
+    {
+      "item": "Curious and culturally engaged",
+      "evidence": "Instagram posts show engagement with high-end cultural institutions (Dior Gold House, MAH) and detailed captions about their significance."
+    },
+    {
+      "item": "Reflective",
+      "evidence": "Instagram post: 'What makes someone extraordinary?' and the math/life analogy post suggest a tendency to reflect on personal and professional growth."
+    }
+  ],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Ansh Mehra is a New Delhi-based founder of The Cutting Edge School, specializing in enterprise AI training and agentic A.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

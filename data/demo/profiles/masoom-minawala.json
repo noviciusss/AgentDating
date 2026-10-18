@@ -1,0 +1,60 @@
+{
+  "id": "masoom-minawala",
+  "summary": "Masoom Minawala is a Mumbai-based entrepreneur, investor, and content creator with a focus on fashion, beauty, and lifestyle. A Forbes 30 Under 30 honoree, she founded Style Fiesta and currently operates as a global influencer working with luxury brands like Louis Vuitton and Dior. Her public persona blends high-end brand partnerships with educational content on personal branding and mental health, while her Instagram reveals a mother who values work-life boundaries and festive hosting.",
+  "needs": [
+    {
+      "item": "Autonomy in scheduling",
+      "evidence": "IG post: 'A facial at home, in my own time, without having to plan another appointment?!'"
+    },
+    {
+      "item": "Mental decompression space",
+      "evidence": "IG post: 'The one I’ve held onto is the car park, because I used to walk through my front door still carrying the entire day, and my children were the ones who paid for it.'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Hosting during festive seasons",
+      "evidence": "IG post: 'The festive season always brings out the host in me and I love that.'"
+    },
+    {
+      "item": "Sneaker collecting/curation",
+      "evidence": "IG post: 'Sneakerina era ✨👻 Comment ‘Shoes’ to get your hands one these.'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Personal branding and 'Alter Ego' frameworks",
+      "evidence": "IG post: 'The first time I heard about “Sasha fierce” my entire mindset about SHOWING UP - online & offline changed... 4 frameworks of “Alter Ego’s”'"
+    },
+    {
+      "item": "Luxury fashion and jewelry",
+      "evidence": "LinkedIn: 'clients include luxury fashion houses such as Louis Vuitton, Dior, and Bvlgari'; IG post: 'Pebble Collection by @theblingeditofficial'"
+    },
+    {
+      "item": "Beauty tutorials and skincare",
+      "evidence": "IG post: 'Watch the full-blown blush tutorial now!'"
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Masoom Minawala is a Mumbai-based entrepreneur, investor, and content creator with a focus on fashion, beauty, and lifes.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

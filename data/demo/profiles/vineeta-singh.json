@@ -1,0 +1,61 @@
+{
+  "id": "vineeta-singh",
+  "summary": "Vineeta Singh is the Co-founder and CEO of SUGAR Cosmetics, India's fastest-growing beauty brand, and a prominent investor on Shark Tank India. An alumnus of IIT Madras and IIM Ahmedabad, she transitioned from a high-profile investment banking career at Deutsche Bank to entrepreneurship. She is an active triathlete and ultramarathon runner who uses her platform to advocate for women's safety and entrepreneurship.",
+  "needs": [
+    {
+      "item": "High-energy social interaction",
+      "evidence": "Instagram post: 'Highly exaggerated version of what to expect from my favourite sharks... Lots of banter with @tanmaybhat and @mojorojo on the Shark Tank Podcast.'"
+    },
+    {
+      "item": "Professional recognition and impact",
+      "evidence": "LinkedIn About: 'committed to creating products that allow every Indian woman to find a favourite and inspire them to start their own entrepreneurship journey.'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Triathlon and Ultramarathons",
+      "evidence": "LinkedIn About: 'Also a triathlete and ultramarat...' (truncated but explicit)"
+    },
+    {
+      "item": "Running",
+      "evidence": "Instagram post: 'Sunscreen before Sunday Run' and 'Thank you @tatamummarathon... for being the FIRST to introduce India to the joy of running'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Beauty Industry Innovation",
+      "evidence": "Instagram post: 'Sweat testing the new @trysugar Tan Ban 4% Niacinamide Sunscreen Light Gel!'"
+    },
+    {
+      "item": "Women's Safety and Empowerment",
+      "evidence": "Instagram post: 'Cages are meant for predators, not prey. We have to give up the gender based restrictions on women - they end up becoming one more safety tax!'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Entrepreneurship and Risk-taking",
+      "evidence": "LinkedIn About: 'famously known for declining a ₹1cr job offer from a leading investment bank to follow her heart and dive into entrepreneurship.'"
+    }
+  ],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Vineeta Singh is the Co-founder and CEO of SUGAR Cosmetics, India's fastest-growing beauty brand, and a prominent invest.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

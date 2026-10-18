@@ -1,0 +1,56 @@
+{
+  "id": "varun-mayya",
+  "summary": "Varun Mayya is a Bengaluru-based founder and content creator operating at the intersection of Generative AI and media. With over 1.2 million Instagram followers, he produces high-engagement tech commentary, podcasts featuring major industry figures like Satya Nadella and Sundar Pichai, and builds experimental AI products. His professional background includes founding Aeos Group, investing in 100xEngineers, and previously working on community software for financial institutions. He identifies as a 'builder, hacker, content creator, idiot' and focuses on the practical applications and cultural implications of AI in the Indian tech ecosystem.",
+  "needs": [
+    {
+      "item": "High-profile industry insights and exclusive access",
+      "evidence": "LinkedIn: 'trying stuff at the intersection of genAI and content'; IG: 'Satya Nadella on... Advice for Indian Engineers'; IG: 'I also asked Sundar what he thinks of wrapper startups'"
+    },
+    {
+      "item": "Rapid iteration and experimentation",
+      "evidence": "LinkedIn: 'Spent a few months hacking around and building Generative AI apps and games'; LinkedIn: 'trying stuff'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Building generative AI applications and games",
+      "evidence": "LinkedIn: 'Autocodepro.com (prompt2code), AlphaCTR.com (YouTube thumbnail generator...), Godinabox.co (GPT inside WhatsApp)'"
+    },
+    {
+      "item": "Creating tech commentary and podcasts",
+      "evidence": "IG: 'Full Podcast Link In Bio'; IG: 'Coming soon. We talk: - Indian 4o Image gen usage...'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Generative AI and its impact on coding skills",
+      "evidence": "LinkedIn: 'My thesis is that generativeAI will transform the skill of writing code into a baseline skill'; IG: 'Can someone who’s never coded, but has the best vibe coding tools, beat an engineer...'"
+    },
+    {
+      "item": "The intersection of AI and art/design",
+      "evidence": "IG: 'Miyazaki's, AI, and the evolving nature of art'"
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Varun Mayya is a Bengaluru-based founder and content creator operating at the intersection of Generative AI and media. W.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

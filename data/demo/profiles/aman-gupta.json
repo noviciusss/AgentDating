@@ -1,0 +1,60 @@
+{
+  "id": "aman-gupta",
+  "summary": "Aman Gupta is a high-profile Indian entrepreneur and media personality, best known as the co-founder of boAt and a recurring investor on Shark Tank India. He is currently building a new venture, OFF/BEAT, and positions himself as a champion for failed founders and young entrepreneurs. His public persona blends corporate success with a 'hustler' identity, leveraging significant social media influence (1.7M+ followers) to drive brand awareness and personal narrative.",
+  "needs": [
+    {
+      "item": "Validation of his status as a 'founder' rather than an 'influencer'",
+      "evidence": "Instagram post: 'Not an influencer who became a founder. A founder whose journey people chose to follow.'"
+    },
+    {
+      "item": "Recognition for his role in supporting failed entrepreneurs",
+      "evidence": "Instagram post: '“Failed Founders” are my favourite breed... So we put up a billboard for them.'"
+    },
+    {
+      "item": "Continued relevance in the startup ecosystem",
+      "evidence": "LinkedIn headline: 'Co-founder : boAt | Founder & CEO : OFF/BEAT'; Instagram bio: 'Shark @sharktank.india'"
+    }
+  ],
+  "hobbies": [],
+  "interests": [
+    {
+      "item": "Startup culture and entrepreneurship",
+      "evidence": "LinkedIn: 'Shark Tank India Season 1,2,3,4,5'; Instagram: 'Shark Tank India Season 6 registrations are now open.'"
+    },
+    {
+      "item": "High-profile networking and government relations",
+      "evidence": "Instagram post: 'We were there as part of the CEO delegation with Hon’ble PM Modi, having dinner inside the Louvre of all places.'"
+    },
+    {
+      "item": "Audio technology and lifestyle brands",
+      "evidence": "LinkedIn: 'Steered the boAt and made it India’s finest Homegrown Lifestyle Brand'; Instagram: 'Aur chaar headphones miljayenge?'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Resilience and second chances for founders",
+      "evidence": "Instagram post: 'People are too quick to judge founders based on their failure... So we put up a billboard for them.'"
+    }
+  ],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Aman Gupta is a high-profile Indian entrepreneur and media personality, best known as the co-founder of boAt and a recur.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

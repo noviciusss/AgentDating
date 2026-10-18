@@ -1,0 +1,86 @@
+{
+  "id": "raj-shamani",
+  "summary": "Raj Shamani is a high-profile Indian media entrepreneur, bestselling author, and investor who founded Figuring Out Media. With over 11.6 million Instagram followers, he operates at the intersection of personal development, business strategy, and media production. His public persona is built on interviewing 'extraordinary people' to decode their thinking, while simultaneously promoting his own ventures, including the investment firm CÜRAA and his media empire. He presents himself as a self-made figure from a non-elite background who leverages curiosity and strategic questioning to drive growth.",
+  "needs": [
+    {
+      "item": "Intellectual stimulation from high-caliber peers",
+      "evidence": "LinkedIn 'about': 'meet the smartest people and get into their minds'; IG bio: 'i study how the world’s most extraordinary people think.'"
+    },
+    {
+      "item": "Validation of his impact on personal growth",
+      "evidence": "IG post: 'Look at the biggest convention center of the country jam packed with thousands of people, who are there for growth.'"
+    },
+    {
+      "item": "Clarity in complex life domains",
+      "evidence": "LinkedIn 'about': 'figuring out money, business, health, relationships, and life was so confusing in the beginning'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Hosting and producing long-form interviews",
+      "evidence": "LinkedIn headline: 'host of one of the world’s most-watched podcasts'; IG bio: 'Podcast Host: @figuringout.co'"
+    },
+    {
+      "item": "Investing in early-stage consumer brands",
+      "evidence": "LinkedIn experience: 'CÜRAA'; IG post: 'At Cüraa, Chef Sanjyot Keer is on a mission to help India cook better'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Behavioral psychology and organizational dynamics",
+      "evidence": "IG post: 'we sit down with @adamgrant Organizational Psychologist & Bestselling Author'"
+    },
+    {
+      "item": "Content creation and creator economy",
+      "evidence": "IG post: 'Tag one person in the comments who you think is on their way to become a creator'"
+    },
+    {
+      "item": "Indian economic and social transformation",
+      "evidence": "IG post: 'India is changing and India wants to gro...'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Meritocracy and self-made success",
+      "evidence": "IG post: 'I had no talent, no background, was not from a big city, did not h...'"
+    },
+    {
+      "item": "Curiosity over passive contemplation",
+      "evidence": "LinkedIn 'about': 'Some people meditate for peace, I ask questions.'"
+    },
+    {
+      "item": "Utility and practical wisdom",
+      "evidence": "LinkedIn 'about': 'take my viewers along for the ride... sharing their lessons (and occasional disasters)'"
+    }
+  ],
+  "communication_style": {
+    "description": "Direct, punchy, and hook-driven; Narrative-driven and vulnerable; Inclusive and community-focused",
+    "evidence": "IG captions: 'Save this before you scroll away', 'Comment ‘Send’ and we’ll personally DM you...'; IG post: 'At age 16, I used to go to English classes... write random dreams at the back of my notebook.'; IG post: 'Tag one person in the comments...'"
+  },
+  "personality_signals": [
+    {
+      "item": "Highly extroverted and audience-oriented",
+      "evidence": "IG followers: 11,673,701; LinkedIn headline: 'one of the world’s most-watched podcasts'"
+    },
+    {
+      "item": "Strategic and business-minded",
+      "evidence": "LinkedIn skills: 'Business Strategy', 'Strategic Planning', 'Entrepreneurship'"
+    }
+  ],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Raj Shamani is a high-profile Indian media entrepreneur, bestselling author, and investor who founded Figuring Out Media.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "sharan-hegde",
+  "summary": "Sharan Hegde is a high-profile Indian finance influencer and entrepreneur, best known as the founder of 1% Club and the creator behind the 'Finance With Sharan' brand. With over 1 crore followers across platforms, he has transitioned from a management consulting background (PwC, KPMG) to building a SEBI-licensed wealth platform. He is currently focused on launching an AI-first personal finance app and managing over ₹750 Crore in assets under advisory. His public persona is built on financial education, transparency ('build in public'), and a narrative of overcoming early academic setbacks (IIT rejection) to achieve significant business success without outside investment.",
+  "needs": [
+    {
+      "item": "Public validation of business milestones",
+      "evidence": "LinkedIn: 'This is where I build in public.' Instagram posts celebrating SEBI registration and app launch with high engagement."
+    },
+    {
+      "item": "Scalability of the AI finance product",
+      "evidence": "LinkedIn: 'building something I genuinely believe Indians have been waiting for: an AI-first personal finance app inside 1% Club.' Instagram: 'Introducing the new 1% Club app!🚀'"
+    },
+    {
+      "item": "Regulatory compliance and trust",
+      "evidence": "Instagram bio: 'SEBI RIA: INA000018896'. Instagram post: 'We got SEBI-registered as a RIA... the holy grail license to give financial advice'"
+    }
+  ],
+  "hobbies": [],
+  "interests": [
+    {
+      "item": "Personal Finance & Investing",
+      "evidence": "LinkedIn headline: 'AI CFO for your money'. Instagram hashtags: #GoldInvestment, #TheBigShort, #MichaelBurry."
+    },
+    {
+      "item": "AI in Finance",
+      "evidence": "LinkedIn: 'AI-first personal finance app'. Instagram post discussing 'rising AI infrastructure costs' at Zoho."
+    },
+    {
+      "item": "Indian Tech Industry Trends",
+      "evidence": "Instagram post: 'No salary hikes at Zoho? Is India’s IT sector facing a bigger crisis?'"
+    },
+    {
+      "item": "Financial History & Case Studies",
+      "evidence": "Instagram post: 'Wall Street thought the housing market was safe. Michael Burry thought otherwise...'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Bootstrapping & Independence",
+      "evidence": "Instagram post: 'No investors. No shortcuts. A ₹600 crore business... building a business without outside investors is a different game altogether.'"
+    },
+    {
+      "item": "Transparency",
+      "evidence": "LinkedIn: 'This is where I build in public.'"
+    },
+    {
+      "item": "Financial Literacy for Masses",
+      "evidence": "LinkedIn: 'help 100Mn+ Indian investors'. Instagram bio: '1% Club App (500k+ installs)'"
+    },
+    {
+      "item": "Resilience",
+      "evidence": "LinkedIn: 'It started in school, when I could not crack IIT... That setback made me fiercely...'"
+    }
+  ],
+  "communication_style": {
+    "description": "Direct and authoritative; Educational and explanatory; Use of social proof",
+    "evidence": "Instagram captions use definitive statements like 'It’s official!!' and 'No salary hikes at Zoho?'; LinkedIn about section explains the backstory and current mission. Instagram posts break down complex topics like Gold ETFs and the 2008 crisis.; LinkedIn lists 'GQ Most Influential Person of the Year 2024', 'Forbes 30 Under 30'. Instagram mentions '1 Crore+ followers'."
+  },
+  "personality_signals": [
+    {
+      "item": "Ambitious and goal-oriented",
+      "evidence": "LinkedIn: 'help 100Mn+ Indian investors'. Instagram: 'manage ₹750 Crore+ in assets under Advisory.'"
+    }
+  ],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Sharan Hegde is a high-profile Indian finance influencer and entrepreneur, best known as the founder of 1% Club and the .",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

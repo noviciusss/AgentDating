@@ -1,0 +1,73 @@
+{
+  "id": "anushka-rathod",
+  "summary": "Anushka Rathod is a high-profile Indian finance content creator, author, and investor based in Surat. Recognized as a Forbes 30U30 Asia and India honoree, she has built a community of over 2 million followers by simplifying complex financial concepts into entertaining, bite-sized content. Her professional background includes equity research and business development at firms like Damos Capital and Proficio Advisors. She is currently focused on scaling her media brand and investing activities while maintaining a strong personal connection to her family and cultural roots.",
+  "needs": [
+    {
+      "item": "Professional collaboration and networking opportunities",
+      "evidence": "LinkedIn headline 'Forbes 30U30 Asia and India' and IG post 'Only @whatsapp and @kunalb11 could make me miss navratri... Thank you for the memorable dinner @meta' indicate active engagement with tech and business leaders."
+    },
+    {
+      "item": "Recognition and validation of her impact on financial literacy",
+      "evidence": "IG post 'My mom used to tell me... But Ma, I finally won! Your daughter made it...' and 'We made it to FORBES 30u30 ASIA, 2024!!!!!' show a strong drive for achievement and acknowledgment."
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Reading and writing about personal finance",
+      "evidence": "LinkedIn 'Author - The Money Guide' and IG bio 'Bestselling Author - THE MONEY GUIDE'."
+    },
+    {
+      "item": "Celebrating cultural festivals (Navratri)",
+      "evidence": "IG post 'Only @whatsapp and @kunalb11 could make me miss navratri!!!' implies she typically participates in Navratri celebrations."
+    }
+  ],
+  "interests": [
+    {
+      "item": "Indian macroeconomics and currency trends",
+      "evidence": "IG post 'What is happening to our rupee? ... It even came close to ₹97 against the dollar.'"
+    },
+    {
+      "item": "Consumer financial fraud prevention",
+      "evidence": "IG post 'Your card didn’t fail. It just got cloned... It’s called card skimming...'"
+    },
+    {
+      "item": "Equity and Angel Investing",
+      "evidence": "LinkedIn about section 'Beyond content creation, I am also an equity and angel investor'."
+    }
+  ],
+  "values": [
+    {
+      "item": "Accessibility and education",
+      "evidence": "LinkedIn about 'breaking down complex financial concepts into bite-sized, entertaining nuggets that's accessible to people from all walks of life.'"
+    },
+    {
+      "item": "Perseverance and learning from participation",
+      "evidence": "IG post 'My mom used to tell me “ Participate in everything, Even if you don’t win, you’ll learn something”.'"
+    },
+    {
+      "item": "Family influence",
+      "evidence": "IG post 'But Ma, I finally won! Your daughter made it ...' directly credits her mother's advice for her success."
+    }
+  ],
+  "communication_style": {
+    "description": "Energetic, informal, and direct; Storytelling-driven",
+    "evidence": "IG captions use exclamation points, emojis (🥹✨), and colloquialisms like 'Whatttt just happened!!!!!' and 'bite-sized, entertaining nuggets'.; IG post about card skimming starts with a specific anecdote: 'A Delhi man swiped his card 3 times...'"
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Anushka Rathod is a high-profile Indian finance content creator, author, and investor based in Surat. Recognized as a Fo.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

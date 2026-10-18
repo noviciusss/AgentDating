@@ -1,0 +1,60 @@
+{
+  "id": "alex-hormozi",
+  "summary": "Alex Hormozi is a high-profile entrepreneur and author based in Las Vegas, known for founding Acquisition.com and co-founding Skool.com. His public persona is defined by a relentless focus on business scaling, aggressive hiring standards, and behavioral psychology applied to marketing. He presents himself as a mentor and thought leader, offering free resources in exchange for engagement, with a communication style that is direct, formulaic, and focused on 'unyielding standards' and high ROI.",
+  "needs": [
+    {
+      "item": "Scalable business systems",
+      "evidence": "LinkedIn headline: 'Get your free scaling roadmap'; IG bio: 'I talk about scaling businesses.'"
+    },
+    {
+      "item": "High-ROI talent acquisition",
+      "evidence": "IG post: 'Hiring talented people is one of the easiest 10x-100x ROI opportunities.'"
+    },
+    {
+      "item": "Behavioral compliance from audiences/employees",
+      "evidence": "IG post on 'Four ways to change human behavior' using operant conditioning principles (cookies/chores)."
+    }
+  ],
+  "hobbies": [],
+  "interests": [
+    {
+      "item": "Business psychology and behavioral economics",
+      "evidence": "IG post: 'Four ways to change human behavior: To get them to DO something: 1) Give them a cookie (add +)...'"
+    },
+    {
+      "item": "Gym and fitness industry operations",
+      "evidence": "LinkedIn about: '2013: Launched United Fitness... 2016: Founded Gym Launch...'"
+    },
+    {
+      "item": "Supplement manufacturing",
+      "evidence": "LinkedIn about: '2019: Our supplement company, Prestige Labs, launched...'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Unyielding standards and performance",
+      "evidence": "IG post: 'Extraordinary outcomes only come from unyielding standards.'"
+    }
+  ],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Alex Hormozi is a high-profile entrepreneur and author based in Las Vegas, known for founding Acquisition.com and co-fou.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

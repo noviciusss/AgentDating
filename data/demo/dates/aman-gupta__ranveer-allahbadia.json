@@ -1,0 +1,37 @@
+{
+  "a": "aman-gupta",
+  "b": "ranveer-allahbadia",
+  "transcript": [
+    {
+      "speaker": "a",
+      "text": "Hey, great to finally meet you—I've heard a lot about your work, so this is a real treat! How's your day been so far?"
+    },
+    {
+      "speaker": "b",
+      "text": "Glad to finally meet you too! My day’s been a whirlwind—recording a quick podcast episode and planning a new brand collab, but"
+    },
+    {
+      "speaker": "a",
+      "text": "Sounds like a busy creative sprint—what’s the podcast about, and who’s the brand you’re teaming up with? I love hearing fresh takes on how audio tech can amplify brand stories. Also, any chance you’ve tried adding a splash of boAt vibes to the mix?"
+    },
+    {
+      "speaker": "b",
+      "text": ""
+    }
+  ],
+  "a_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Unterminated string starting at: line 1 column 340 (char 339)",
+    "would_second_date": false
+  },
+  "b_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Expecting value: line 1 column 1 (char 0)",
+    "would_second_date": false
+  },
+  "final_score": 50.0,
+  "date_failed": false,
+  "model_used": "openai/gpt-oss-20b"
+}

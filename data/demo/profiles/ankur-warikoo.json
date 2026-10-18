@@ -1,0 +1,64 @@
+{
+  "id": "ankur-warikoo",
+  "summary": "Ankur Warikoo is a high-profile Indian entrepreneur and author with a massive social media following (16M+). He is the founder of WebVeda, India Genius Challenge, and Monzy. His public persona is centered on empowering others through education, career advice, and financial literacy. He presents himself as a pragmatic, anti-consumerist leader who values deep relationships over superficial networks and prioritizes long-term wealth and freedom over status symbols.",
+  "needs": [
+    {
+      "item": "Intellectual stimulation and teaching opportunities",
+      "evidence": "IG Bio: 'Love learning, teaching and sharing ❤️'; LinkedIn About: 'share my experiences and insights on career, mindset, startups, personal finance, and relationships.'"
+    },
+    {
+      "item": "Autonomy and freedom of time",
+      "evidence": "IG Post: 'We spend to become wealthy and gain freedom of our time.'"
+    },
+    {
+      "item": "Authentic, low-maintenance relationships",
+      "evidence": "IG Post: 'You don't need a big circle. You need a real one.'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Writing and content creation",
+      "evidence": "LinkedIn Headline: '6X Bestselling Author'; LinkedIn Experience (wariCrew): 'I create content on Personal Finance, Career, Relationships and Personal Growth.'"
+    },
+    {
+      "item": "Team offsites and interactive team building",
+      "evidence": "IG Post: 'I asked every one a fun question during our recent offsite - what is your best expensive purchase?'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Personal Finance and Wealth Building",
+      "evidence": "IG Post: '5 money rules my wife and I follow...'; LinkedIn Experience (wariCrew): 'Personal Finance'."
+    },
+    {
+      "item": "Career Development and Job Market Trends",
+      "evidence": "IG Post: '5 fastest growing jobs and 5 fastest dying jobs!'; LinkedIn Experience (WebVeda): 'offering skills, community and jobs'."
+    },
+    {
+      "item": "Relationships and Marriage Dynamics",
+      "evidence": "IG Post: 'Before you say yes to marriage, check these 5 things.'"
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Ankur Warikoo is a high-profile Indian entrepreneur and author with a massive social media following (16M+). He is the f.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

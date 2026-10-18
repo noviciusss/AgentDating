@@ -1,0 +1,78 @@
+{
+  "id": "ishita-mangal",
+  "summary": "Ishita Mangal is a New Delhi-based fashion designer and digital creator with a large following (450k+ IG, 850k+ YT). She blends fashion, beauty, and Indian cultural heritage with humor, having founded the women's wear brand QUO in 2014. Her content strategy focuses on 'unconventional' and 'sassy' explanations of traditional Indian aesthetics, such as bridal looks and regional customs, while maintaining a professional design background from NIFT.",
+  "needs": [
+    {
+      "item": "Brand visibility and audience engagement",
+      "evidence": "Headline: 'Content Creator | Instagram 450k+ | Youtube 850k+'; Recent posts show consistent engagement with brand partnerships (Tanishq, Flipkart, Urban Yog)."
+    },
+    {
+      "item": "Creative autonomy in content creation",
+      "evidence": "LinkedIn About: 'Ability to work with large scaled teams, and independantly due to her experience in building her own brand, QUO.'; IG Bio: 'Delivering funny fashion & beauty content'."
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Running",
+      "evidence": "IG Post: 'And if you’re someone who loves running like me, sweating on t...'"
+    },
+    {
+      "item": "Jewellery appreciation/collection",
+      "evidence": "IG Post: 'Somewhere between admiring the craftsmanship and trying these diamonds on, I forgot I was supposed to be just looking.'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Indian cultural heritage and regional traditions",
+      "evidence": "IG Bio: 'Explaining Indian heritage with humor'; IG Posts: 'IshtatesofIndia : West Bengal Bridal Look', 'Gujarat’s centuries-old Trajva tattoo tradition'."
+    },
+    {
+      "item": "Fashion design and trend analysis",
+      "evidence": "LinkedIn Skills: 'Fashion Design', 'Trend Analysis'; Experience: 'Conducted trend analysis... for Rohit Gandhi + Rahul Khanna'."
+    },
+    {
+      "item": "Beauty and skincare",
+      "evidence": "IG Bio: 'funny fashion & beauty content'; IG Post: 'Can we talk about how annoying sticky moisturisers are?'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Cultural preservation and education",
+      "evidence": "IG Post: 'They have stories older than your family traditions!... these motifs are more than just beautiful body art.'"
+    },
+    {
+      "item": "Empowerment of the modern woman",
+      "evidence": "LinkedIn Experience (QUO India): 'typifies the modern woman who is constantly evolving and steadily taking over the corporate society.'"
+    }
+  ],
+  "communication_style": {
+    "description": "Humorous and conversational; Informative yet accessible",
+    "evidence": "IG Bio: 'Delivering funny fashion & beauty content'; IG Post: 'Who knows which aunty I’m talking about? 🤭'; LinkedIn Experience: 'My page delivers informative fashion and beauty content unconventionally.'"
+  },
+  "personality_signals": [
+    {
+      "item": "Entrepreneurial and independent",
+      "evidence": "LinkedIn About: 'building her own brand, QUO'; Founded QUO in 2014."
+    },
+    {
+      "item": "Culturally curious and detailed",
+      "evidence": "IG Posts: Detailed explanations of 'Kolka', 'mukut', and 'Trajva' tattoo motifs."
+    }
+  ],
+  "looking_for": {
+    "description": "A partner who appreciates cultural depth and has a sense of humor",
+    "confidence": "medium",
+    "evidence": "Inferred from her consistent use of humor to explain serious cultural topics (IG: 'Explaining Indian heritage with humor') and her 'sassy' brand voice (LinkedIn: 'fashionable yet sassy')."
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Ishita Mangal is a New Delhi-based fashion designer and digital creator with a large following (450k+ IG, 850k+ YT). She.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "grace-beverley",
+  "summary": "Grace Beverley is a high-profile London-based entrepreneur and serial founder, known for brands like TALA, Shreddy, and Retrograde. She holds an MA from Oxford and has raised over $14m in funding. Her public persona blends corporate ambition with candid commentary on gender dynamics and personal milestones, including recent motherhood.",
+  "needs": [
+    {
+      "item": "Strategic support for multiple ventures",
+      "evidence": "LinkedIn headline lists 'Founder: TALA, SHREDDY & The Productivity Method | Co-Founder: Retrograde | Co-Owner: HIDE Food & Water2'; IG bio lists 'founder, investor + advisor' with multiple brand handles."
+    },
+    {
+      "item": "Postpartum recovery and support",
+      "evidence": "IG post: 'my kpi’s are very milk based right now, so here are my absolute must haves for postpartum that i’ve used every day in her first month'."
+    },
+    {
+      "item": "Time management and productivity systems",
+      "evidence": "LinkedIn experience: 'The Productivity Method is a simple, practical framework to help you take control of your time...'; IG bio includes '@theproductivitymethod'."
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Podcasting and content creation",
+      "evidence": "IG bio: '🎙️ @workinghardpod'; IG post: 'Comment ‘brand’ and I’ll send you this week’s @workinghardpod episode'."
+    },
+    {
+      "item": "Fitness and wellness",
+      "evidence": "LinkedIn experience: 'SHREDDY... mission is to provide no-nonsense, expert-led solutions to the everyday gym-goer'; TALA description mentions 'activewear'."
+    }
+  ],
+  "interests": [
+    {
+      "item": "Women in entrepreneurship and funding",
+      "evidence": "LinkedIn about: 'leading voice on female funding...'; IG post: 'hilarious that we live in a world where men complain that the world’s richest women are rich from divorce...'"
+    },
+    {
+      "item": "Sustainable fashion",
+      "evidence": "LinkedIn about: 'leading voice on... sustainable fashion'; TALA description: 'sustainably and ethically produced styles'."
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Grace Beverley is a high-profile London-based entrepreneur and serial founder, known for brands like TALA, Shreddy, and .",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

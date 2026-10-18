@@ -1,0 +1,78 @@
+{
+  "id": "shraddha-jain",
+  "summary": "Shraddha Jain is a high-profile Indian comedian and content creator based in Bangalore. With over 1.1 million Instagram followers, she is known for her self-managed career, distinct 'Aiyyo' persona, and recent recognition with a National Creator Award. Her public presence blends professional milestones with relatable, humorous content about family, food, and daily life.",
+  "needs": [
+    {
+      "item": "Professional boundary management",
+      "evidence": "LinkedIn lists her as 'Self-employed' with no other roles; Instagram bio states 'Self Managed' and provides a work email, indicating she handles her own business operations."
+    },
+    {
+      "item": "Platform responsibility awareness",
+      "evidence": "Post caption: 'May I never lose sight of my responsibilities as a person with a platform.'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Family gatherings and travel",
+      "evidence": "Instagram post '#meragaon' describes 'Family Lunch', 'Family Function', and 'Mera gaon ka hotal' (My village hotel), suggesting a hobby of visiting family in her hometown."
+    },
+    {
+      "item": "Food exploration",
+      "evidence": "Instagram post 'Hello! Long time no rice!' and the '#meragaon' post mentioning 'Ready for food inspection ANYTIME'."
+    }
+  ],
+  "interests": [
+    {
+      "item": "Stand-up comedy and content creation",
+      "evidence": "LinkedIn headline 'Comedian'; Instagram bio 'Comedian, Content Creator'; Post about '#sominithings' ticket link."
+    },
+    {
+      "item": "National recognition and civic engagement",
+      "evidence": "Post about receiving the '#NationalCreatorAward' from the 'Government of India' and meeting the 'Honorable Prime Minister'."
+    }
+  ],
+  "values": [
+    {
+      "item": "Gratitude and humility",
+      "evidence": "Post caption: 'Thank you Government of India, thank you my audience!' and 'Thank you @narendramodi ji!'"
+    },
+    {
+      "item": "Authenticity and honesty",
+      "evidence": "Post caption: 'May the #NationalCreatorAward inspire us to be graceful, honest and compassionate.'"
+    },
+    {
+      "item": "Family connection",
+      "evidence": "Instagram post '#meragaon' details family dynamics like 'Appa showing off his gold bracelet' and 'Gangu got her shots'."
+    }
+  ],
+  "communication_style": {
+    "description": "Humorous and self-deprecating; Direct and business-like for professional inquiries",
+    "evidence": "Instagram bio uses 'Aiyyo' (a common exclamation of mild frustration/surprise) as part of her handle/name; Post about meeting PM uses 'I am not blinking, that’s my ‘O My Jod...’ look'.; Instagram bio: 'Work? Yes. Here -> aiyyoshraddha7@gmail.com'"
+  },
+  "personality_signals": [
+    {
+      "item": "High energy and expressive",
+      "evidence": "Post about meeting PM: 'O My Jod, he really said that, this is really happening!!!!' with multiple exclamation marks."
+    },
+    {
+      "item": "Grounded/Relatable despite fame",
+      "evidence": "Post '#meragaon' describes mundane family events like 'Banger pe banger pe banger pe banger!!!' (likely a local food item or slang) and 'Nutmeg goals…but no football…'."
+    }
+  ],
+  "looking_for": {
+    "description": "A partner who respects her independence and career demands; Someone who appreciates humor and lightheartedness",
+    "confidence": "medium",
+    "evidence": "Inferred from her 'Self Managed' status, 1.1M+ followers, and public professional milestones, suggesting a partner must be comfortable with her high-profile, demanding schedule.; Inferred from her primary profession as a 'Comedian' and her consistently humorous Instagram captions."
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Shraddha Jain is a high-profile Indian comedian and content creator based in Bangalore. With over 1.1 million Instagram .",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

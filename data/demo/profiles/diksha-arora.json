@@ -1,0 +1,86 @@
+{
+  "id": "diksha-arora",
+  "summary": "Diksha Arora is a Kolkata-based career coach, former lawyer, and content creator with over 2 million Instagram followers. She pivoted from a legal career (LLB from University of Delhi) to education and e-learning, currently running 'Diksha Arora Dot Com LLP'. She is recognized as a 'National Bestseller Author' and has received awards from Times of India and Hurun India for her work in career mentoring and interview preparation.",
+  "needs": [
+    {
+      "item": "Professional recognition and awards",
+      "evidence": "LinkedIn: 'Helping you Land Your Dream Job'; IG: 'Best Education Creator in India award by the @timesofindia', 'Top 3 in India... Hurun India – The Moment of Lift Award 2025'"
+    },
+    {
+      "item": "Content creation and audience growth",
+      "evidence": "LinkedIn: '2 Million+ on Instagram'; IG: 'YouTube Play Button', '1937886 followers'"
+    },
+    {
+      "item": "Impact on student careers",
+      "evidence": "LinkedIn: '50,000+ Candidates Placed'; IG: '1000s of Candidates Placed in Top Companies'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Writing and publishing",
+      "evidence": "IG Bio: 'National Bestseller Author'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Indian corporate recruitment trends",
+      "evidence": "IG Post: 'The American Dream just got more complicated for Indian IT professionals... suspension involving 8 major companies'"
+    },
+    {
+      "item": "Employee benefits and government schemes",
+      "evidence": "IG Post: 'EPFO has revamped its website... One of the most useful updates is Service History'"
+    },
+    {
+      "item": "MBA admissions in India",
+      "evidence": "IG Post: 'Here are 5 top MBA colleges in India where CAT is not mandatory!'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Purpose-driven work",
+      "evidence": "IG Post: 'reminder of what purpose-driven work can create'"
+    },
+    {
+      "item": "Empowerment and confidence building",
+      "evidence": "LinkedIn: 'equipping individuals w...'; 'help my students to approach their interviews with confidence'"
+    },
+    {
+      "item": "Simplification of complex processes",
+      "evidence": "LinkedIn: 'My mission is to simplify the path to success'; 'curated simple techniques that are student friendly'"
+    }
+  ],
+  "communication_style": {
+    "description": "Motivational and gratitude-focused; Informative and list-based; Direct and professional",
+    "evidence": "IG Post: 'I feel incredibly grateful and honoured'; 'Grateful beyond words. 🥹'; IG Post: 'Here are 5 top MBA colleges... 1️⃣ NMIMS Mumbai... 2️⃣ SIBM Pune...'; LinkedIn Headline: 'Interview Coach | 2 Million+ on Instagram | Helping you Land Your Dream Job'"
+  },
+  "personality_signals": [
+    {
+      "item": "Ambitious and high-achieving",
+      "evidence": "LinkedIn: '4M Followers across all social media platforms'; IG: 'YouTube Play Button'"
+    },
+    {
+      "item": "Resilient and unconventional",
+      "evidence": "IG Post: 'From choosing an unconventional path to becoming In...'"
+    },
+    {
+      "item": "Empathetic teacher",
+      "evidence": "LinkedIn: 'experienced coach, motivator and a teacher'; 'student friendly'"
+    }
+  ],
+  "looking_for": {
+    "description": "A partner who respects her high-profile career and public persona",
+    "confidence": "medium",
+    "evidence": "Inferred from: '2 Million+ on Instagram', 'National Bestseller Author', and frequent posts about awards and public recognition."
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Diksha Arora is a Kolkata-based career coach, former lawyer, and content creator with over 2 million Instagram followers.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "nuseir-yassin",
+  "summary": "Nuseir Yassin is a CEO and content creator based in Dubai, known for his media company Nas Daily and his personal brand 'yassinspeaks'. He has a background in data engineering at Venmo and a degree from Harvard. His public persona blends business leadership with self-improvement and philosophical commentary, often using short, punchy video formats to discuss discipline, religion, and success.",
+  "needs": [
+    {
+      "item": "Intellectual stimulation and deep conversation",
+      "evidence": "IG post: 'i studied 6 religions in 6 months'; LinkedIn: 'Building Nas.com to help businesses grow with intelligence'"
+    },
+    {
+      "item": "Alignment with high-discipline lifestyle",
+      "evidence": "IG post: 'nothing good happens after 9 pm' with hashtags #discipline #consistency"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Content creation and video production",
+      "evidence": "LinkedIn: 'I make videos too'; IG username 'yassinspeaks' with regular video-style captions"
+    },
+    {
+      "item": "Studying comparative religion",
+      "evidence": "IG post: 'i studied 6 religions in 6 months and...'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Business strategy and SEO",
+      "evidence": "IG post: 'Can people find you on Google?' with hashtags #seo #business"
+    },
+    {
+      "item": "Philosophy and life stages",
+      "evidence": "IG post: 'the 3 stages in life.' with hashtags #life #hero #villain"
+    },
+    {
+      "item": "Non-traditional retirement planning",
+      "evidence": "IG post: 'How is it okay to only retire at 65?'"
+    }
+  ],
+  "values": [
+    {
+      "item": "Discipline and consistency",
+      "evidence": "IG post: 'nothing good happens after 9 pm' with hashtags #discipline #consistency"
+    },
+    {
+      "item": "Courage to be disliked for truth",
+      "evidence": "IG post: 'It takes courage to be disliked, but the truth is : there's no other option.'"
+    }
+  ],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Nuseir Yassin is a CEO and content creator based in Dubai, known for his media company Nas Daily and his personal brand .",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

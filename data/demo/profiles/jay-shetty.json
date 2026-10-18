@@ -1,0 +1,64 @@
+{
+  "id": "jay-shetty",
+  "summary": "Jay Shetty is a global bestselling author, podcaster, and former Hindu monk based in Los Angeles. He operates at the intersection of ancient spiritual wisdom and modern digital media, serving as the Chief Purpose Officer at Calm and host of the top-charting 'On Purpose' podcast. His public persona is defined by high-volume content creation focused on mental wellness, purpose-driven living, and compassionate communication.",
+  "needs": [
+    {
+      "item": "Validation of purpose and impact",
+      "evidence": "LinkedIn headline: 'Chief Purpose Officer at Calm'; About section: 'made an indelible impact on hearts and minds worldwide'"
+    },
+    {
+      "item": "Access to high-profile networks and collaborations",
+      "evidence": "LinkedIn experience: 'engages audiences... at places such as Google, Nasdaq, HSBC'; 'works with... Facebook, Snapchat and National Geographic'"
+    },
+    {
+      "item": "Emotional resonance and kindness in interactions",
+      "evidence": "Instagram posts: 'Everyone has something going on in their life, be kind'; 'We’re all pushing through something... Be kind today'"
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Podcasting and storytelling",
+      "evidence": "LinkedIn: 'award-winning podcast host of On Purpose'; 'Jay loves to turn a message into an inspiring story'"
+    },
+    {
+      "item": "Public speaking and experiential coaching",
+      "evidence": "LinkedIn: 'engages audiences of all sizes through special events and “experiential learning” exercises'"
+    }
+  ],
+  "interests": [
+    {
+      "item": "Mental wellness and mindfulness",
+      "evidence": "LinkedIn: 'Chief Purpose Officer at Calm'; 'Health and Wellness podcast'; Book: 'Think Like a Monk'"
+    },
+    {
+      "item": "Ancient wisdom and monastic practice",
+      "evidence": "LinkedIn: 'transformative journey as a Hindu monk'; 'merging ancient wisdom with the digital world'"
+    },
+    {
+      "item": "Adaptive beverages and health products",
+      "evidence": "Instagram bio: '🧋 @drinkjuni'; LinkedIn experience: 'Juni Adaptogenic Sparkling Tea'"
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Jay Shetty is a global bestselling author, podcaster, and former Hindu monk based in Los Angeles. He operates at the int.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

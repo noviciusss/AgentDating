@@ -1,0 +1,60 @@
+{
+  "id": "ali-abdaal",
+  "summary": "Ali Abdaal is a former doctor turned entrepreneur, author, and YouTuber based in London. He is a public figure with over 6 million YouTube subscribers and 1.1 million Instagram followers, known for his 'Feel-Good Productivity' philosophy. He is married and recently became a father. His professional life revolves around content creation, education, and building scalable businesses, while his personal life emphasizes family, health, and intentional living.",
+  "needs": [
+    {
+      "item": "Support for high-volume content creation and business operations",
+      "evidence": "LinkedIn headline: 'Doctor-turned-Entrepreneur + Productivity Expert + YouTuber (6M subs)'; IG bio: 'Give @superfocus.me a go' (productivity tool)."
+    },
+    {
+      "item": "Alignment with 'feel-good' and sustainable work ethics",
+      "evidence": "LinkedIn about: 'strategies and tools that help us live happier, healthier and more productive lives'; IG post: 'I used to assume that a successful business should keep growing... [but now] I’d keep it simple.'"
+    },
+    {
+      "item": "Family-oriented social interactions",
+      "evidence": "IG post: 'our baby girl arrived to the world... settling into this new season of being a new little family of three'; IG post: 'we got married'."
+    }
+  ],
+  "hobbies": [
+    {
+      "item": "Content creation and video production",
+      "evidence": "LinkedIn about: 'I make videos that explore the strategies...'; IG bio: 'Doctor turned Entrepreneur'."
+    },
+    {
+      "item": "Reading and writing",
+      "evidence": "LinkedIn headline: 'New York Times Bestselling Author of “Feel-Good Productivity”'; LinkedIn about: 'I write a weekly email newsletter'."
+    },
+    {
+      "item": "Gardening/Nature appreciation (inferred)",
+      "evidence": "IG post location: 'Kew Gardens' for wedding photos; inferred from choice of venue and general 'healthier/happier' focus."
+    }
+  ],
+  "interests": [
+    {
+      "item": "Productivity systems and tools",
+      "evidence": "LinkedIn skills: 'Productivity' (implied by role); IG bio: 'Give @superfocus.me a go'."
+    }
+  ],
+  "values": [],
+  "communication_style": {
+    "description": "",
+    "evidence": ""
+  },
+  "personality_signals": [],
+  "looking_for": {
+    "description": "",
+    "confidence": "low",
+    "evidence": ""
+  },
+  "dealbreakers": [],
+  "lifestyle": {
+    "description": "",
+    "evidence": ""
+  },
+  "agent_persona": "Authentic persona grounded in profile: Ali Abdaal is a former doctor turned entrepreneur, author, and YouTuber based in London. He is a public figure with over.",
+  "data_quality": {
+    "linkedin": "none",
+    "instagram": "none"
+  },
+  "model_used": "qwen/qwen3.8-27b"
+}

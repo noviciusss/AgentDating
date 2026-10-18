@@ -1,0 +1,37 @@
+{
+  "a": "anushka-rathod",
+  "b": "masoom-minawala",
+  "transcript": [
+    {
+      "speaker": "a",
+      "text": "Hey, it’s great to finally meet you in person! I’ve been looking forward to this—got a cup of chai on the house, if you’re up for it. So, what’s your favorite way to unwind after a hectic day?"
+    },
+    {
+      "speaker": "b",
+      "text": "Thanks! I’m glad you brought the chai—nothing beats a steaming cup after a marathon shoot or a late‑night investor call. When I finally"
+    },
+    {
+      "speaker": "a",
+      "text": "That sounds exhausting—what kind of shoots keep you on your toes? And investor calls? I’m always curious how you juggle the two."
+    },
+    {
+      "speaker": "b",
+      "text": "I’m mostly doing runway‑ready looks for Louis Vuitton and Dior, plus a few viral beauty tutorials that need a touch of glam. The investor calls are usually the “big picture” chats—setting up the next fund round or scouting a brand partnership—so I try to keep them in a separate block of my day, just to keep the creative side fresh. How do you keep your own projects on track?"
+    }
+  ],
+  "a_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Expecting value: line 1 column 1 (char 0)",
+    "would_second_date": false
+  },
+  "b_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Expecting value: line 1 column 1 (char 0)",
+    "would_second_date": false
+  },
+  "final_score": 50.0,
+  "date_failed": false,
+  "model_used": "openai/gpt-oss-20b"
+}

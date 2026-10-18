@@ -1,0 +1,1002 @@
+[
+  {
+    "person_id": "diksha-arora",
+    "matches": [
+      {
+        "other_id": "ankur-warikoo",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Expecting value: line 1 column 1 (char 0)",
+        "date_ref": "ankur-warikoo__diksha-arora"
+      },
+      {
+        "other_id": "shraddha-jain",
+        "score": 18.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 17.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "mehar-sindhu-batra",
+        "score": 16.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "vineeta-singh",
+        "score": 15.2,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "sharan-hegde",
+    "matches": [
+      {
+        "other_id": "anushka-rathod",
+        "score": 15.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 15.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "varun-mayya",
+        "score": 15.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 14.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ansh-mehra",
+        "score": 13.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "anushka-rathod",
+    "matches": [
+      {
+        "other_id": "masoom-minawala",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Expecting value: line 1 column 1 (char 0)",
+        "date_ref": "anushka-rathod__masoom-minawala"
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 20.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "shraddha-jain",
+        "score": 17.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "diksha-arora",
+        "score": 17.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 17.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "ranveer-allahbadia",
+    "matches": [
+      {
+        "other_id": "aman-gupta",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Expecting value: line 1 column 1 (char 0)",
+        "date_ref": "aman-gupta__ranveer-allahbadia"
+      },
+      {
+        "other_id": "jay-shetty",
+        "score": 34.0,
+        "dated": true,
+        "reason": "The conversation lacked any genuine exchange, as the date initiated with a scripted, overly formal monologue that failed to provoke a substantive response from Ranveer. The interaction collapsed into fragmented, incoherent text where Ranveer\u2019s reply was cut off, indicating a total breakdown in communication flow. Concerns: The date's opening was so generic and performative that it failed to trigger the intellectual stimulation or curiosity Ranveer values, resulting in a non-responsive and disjointed experience. There was zero evidence of shared values or authentic connection, making the interaction feel hollow and unengaging.",
+        "date_ref": "jay-shetty__ranveer-allahbadia"
+      },
+      {
+        "other_id": "raj-shamani",
+        "score": 19.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 17.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 16.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "raj-shamani",
+    "matches": [
+      {
+        "other_id": "alex-hormozi",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Expecting value: line 1 column 1 (char 0)",
+        "date_ref": "alex-hormozi__raj-shamani"
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 19.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "steven-bartlett",
+        "score": 17.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 14.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ankur-warikoo",
+        "score": 14.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "ishita-mangal",
+    "matches": [
+      {
+        "other_id": "ansh-mehra",
+        "score": 15.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 15.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 14.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "masoom-minawala",
+        "score": 14.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 13.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "ishan-sharma",
+    "matches": [
+      {
+        "other_id": "varun-mayya",
+        "score": 18.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ansh-mehra",
+        "score": 17.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ali-abdaal",
+        "score": 15.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "tiffany-janzen",
+        "score": 15.2,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "aman-gupta",
+        "score": 14.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "ansh-mehra",
+    "matches": [
+      {
+        "other_id": "varun-mayya",
+        "score": 19.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ishan-sharma",
+        "score": 17.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 17.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ishita-mangal",
+        "score": 15.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 14.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "rishabh-jain",
+    "matches": [
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 17.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 17.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ansh-mehra",
+        "score": 17.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "varun-mayya",
+        "score": 15.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "aman-gupta",
+        "score": 15.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "shreya-pattar",
+    "matches": [
+      {
+        "other_id": "anushka-rathod",
+        "score": 15.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 12.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ishan-sharma",
+        "score": 12.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "masoom-minawala",
+        "score": 11.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "diksha-arora",
+        "score": 11.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "shraddha-jain",
+    "matches": [
+      {
+        "other_id": "diksha-arora",
+        "score": 18.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 17.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ali-abdaal",
+        "score": 15.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "mehar-sindhu-batra",
+        "score": 14.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "grace-beverley",
+        "score": 13.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "mehar-sindhu-batra",
+    "matches": [
+      {
+        "other_id": "diksha-arora",
+        "score": 16.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "shraddha-jain",
+        "score": 14.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 13.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 12.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "grace-beverley",
+        "score": 10.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "masoom-minawala",
+    "matches": [
+      {
+        "other_id": "anushka-rathod",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Expecting value: line 1 column 1 (char 0)",
+        "date_ref": "anushka-rathod__masoom-minawala"
+      },
+      {
+        "other_id": "ishita-mangal",
+        "score": 14.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 12.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ansh-mehra",
+        "score": 12.2,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "shreya-pattar",
+        "score": 11.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "ali-abdaal",
+    "matches": [
+      {
+        "other_id": "grace-beverley",
+        "score": 16.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "nuseir-yassin",
+        "score": 15.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "shraddha-jain",
+        "score": 15.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ishan-sharma",
+        "score": 15.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 14.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "tiffany-janzen",
+    "matches": [
+      {
+        "other_id": "anushka-rathod",
+        "score": 15.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ishan-sharma",
+        "score": 15.2,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "varun-mayya",
+        "score": 14.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ansh-mehra",
+        "score": 14.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "diksha-arora",
+        "score": 13.2,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "alex-hormozi",
+    "matches": [
+      {
+        "other_id": "raj-shamani",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Expecting value: line 1 column 1 (char 0)",
+        "date_ref": "alex-hormozi__raj-shamani"
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 11.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "shreya-pattar",
+        "score": 10.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ali-abdaal",
+        "score": 10.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ansh-mehra",
+        "score": 10.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "steven-bartlett",
+    "matches": [
+      {
+        "other_id": "raj-shamani",
+        "score": 17.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "aman-gupta",
+        "score": 13.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 13.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 13.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "jay-shetty",
+        "score": 12.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "varun-mayya",
+    "matches": [
+      {
+        "other_id": "ansh-mehra",
+        "score": 19.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ishan-sharma",
+        "score": 18.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 15.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "sharan-hegde",
+        "score": 15.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 14.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "nuseir-yassin",
+    "matches": [
+      {
+        "other_id": "ali-abdaal",
+        "score": 15.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "raj-shamani",
+        "score": 14.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 14.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 13.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "steven-bartlett",
+        "score": 12.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "grace-beverley",
+    "matches": [
+      {
+        "other_id": "ali-abdaal",
+        "score": 16.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 14.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 14.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "shraddha-jain",
+        "score": 13.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 13.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "simran-kaur",
+    "matches": [
+      {
+        "other_id": "anushka-rathod",
+        "score": 20.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "aman-gupta",
+        "score": 16.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "sharan-hegde",
+        "score": 15.4,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "vineeta-singh",
+        "score": 15.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "varun-mayya",
+        "score": 14.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "jay-shetty",
+    "matches": [
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 34.0,
+        "dated": true,
+        "reason": "The interaction lacked the emotional resonance and storytelling depth Jay Shetty values, as the date provided a fragmented, incoherent response ('When the studio lights') that prevented any meaningful connection or validation of purpose. The conversation failed to engage his interests in ancient wisdom or mental wellness, resulting in a static and unfulfilling exchange. Concerns: The date's communication was incoherent and did not offer the high-profile network or kindness Jay seeks, making it difficult to establish the authentic, purpose-driven connection he prioritizes. There was no evidence of shared values or mutual interest, leaving Jay without the emotional uplift or intellectual stimulation he expects.",
+        "date_ref": "jay-shetty__ranveer-allahbadia"
+      },
+      {
+        "other_id": "raj-shamani",
+        "score": 14.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 14.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "varun-mayya",
+        "score": 13.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "diksha-arora",
+        "score": 13.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "aman-gupta",
+    "matches": [
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Unterminated string starting at: line 1 column 340 (char 339)",
+        "date_ref": "aman-gupta__ranveer-allahbadia"
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 16.0,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 15.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ishan-sharma",
+        "score": 14.7,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "raj-shamani",
+        "score": 14.6,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "vineeta-singh",
+    "matches": [
+      {
+        "other_id": "diksha-arora",
+        "score": 15.2,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "simran-kaur",
+        "score": 15.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "aman-gupta",
+        "score": 13.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 12.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "grace-beverley",
+        "score": 12.5,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  },
+  {
+    "person_id": "ankur-warikoo",
+    "matches": [
+      {
+        "other_id": "diksha-arora",
+        "score": 50.0,
+        "dated": true,
+        "reason": "Scoring unavailable Concerns: Expecting value: line 1 column 1 (char 0)",
+        "date_ref": "ankur-warikoo__diksha-arora"
+      },
+      {
+        "other_id": "anushka-rathod",
+        "score": 15.1,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "raj-shamani",
+        "score": 14.9,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "ranveer-allahbadia",
+        "score": 14.8,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      },
+      {
+        "other_id": "rishabh-jain",
+        "score": 14.3,
+        "dated": false,
+        "reason": "Not dated (similarity estimate)",
+        "date_ref": ""
+      }
+    ]
+  }
+]

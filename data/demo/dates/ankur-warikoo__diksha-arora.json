@@ -1,0 +1,37 @@
+{
+  "a": "ankur-warikoo",
+  "b": "diksha-arora",
+  "transcript": [
+    {
+      "speaker": "a",
+      "text": "Hey, great to finally meet you! I’ve heard a lot about your passion for learning—what’s the most exciting thing you’ve been diving into lately?"
+    },
+    {
+      "speaker": "b",
+      "text": "Nice to meet you too! Lately I’ve been deep‑dipping into the rise of AI‑powered career counseling platforms—trying to see how we can keep the human touch while scaling impact. How about you—what’s been keeping you inspired lately?"
+    },
+    {
+      "speaker": "a",
+      "text": "That’s a fascinating space—AI can widen reach, but the real value is still in the mentor’s empathy and nuanced guidance. I’ve been inspired by a few things lately: a new book on personal finance fundamentals, and a workshop where we built a micro‑learning platform for interns. How do you envision striking that balance between scale and the “human touch” in your projects?"
+    },
+    {
+      "speaker": "b",
+      "text": "You’re spot on—scale gives breadth, empathy gives depth. I’m working on a “micro‑counseling” module that lets a single mentor’s insights be delivered"
+    }
+  ],
+  "a_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Expecting value: line 1 column 1 (char 0)",
+    "would_second_date": false
+  },
+  "b_verdict": {
+    "score": 50,
+    "chemistry": "Scoring unavailable",
+    "concerns": "Expecting value: line 1 column 1 (char 0)",
+    "would_second_date": false
+  },
+  "final_score": 50.0,
+  "date_failed": false,
+  "model_used": "openai/gpt-oss-20b"
+}
